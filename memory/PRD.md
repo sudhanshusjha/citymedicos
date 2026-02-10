@@ -1,34 +1,35 @@
 # City Medicos Website - PRD
 
 ## Original Problem Statement
-Build a complete, production-ready website for a local medical store "City Medicos – Chemist & Druggist". High-trust, call-first design. Primary goal: drive CALL or WHATSAPP actions.
+Build a complete, production-ready website for a local medical store "City Medicos – Chemist & Druggist". High-trust, call-first design with dark theme.
 
 ## Core Requirements
 - Phone/WhatsApp: 9873341450
-- FREE HOME DELIVERY highlight
+- Address: Shop No. 5, Fusion Market, Greater Noida West – 201306
+- Timing: Mon-Sun: 8 AM – 11:30 PM
+- FREE HOME DELIVERY
 - 6 Categories: Medicine, Ayurveda, Surgical, Cosmetics, Baby Products, Doctor Support
-- Brand: Orange #FF4A1C, Green #1BAA5E
-- NO forms, NO online ordering, NO payments
-- 7 pages required
+- Doctor Support: "Health consultations from experienced Physician"
 
-## Design System: Swiss Medical Vitality
+## Design System: Dark Theme
+- Background: #1F1F1F (dark grey)
+- Text: White on dark backgrounds
+- Primary: Orange #FF4A1C
+- Green #1BAA5E: ONLY for medical symbols (+) and trust icons
+- NO pastel/soft colors
+- NO gradients, NO shadows
 - Typography: Outfit (headings), DM Sans (body)
-- Flat design, border-heavy, no shadows/gradients
-- High contrast for elderly readability
-- Mobile-first responsive
 
 ## What's Been Implemented (Jan 2026)
-- ✅ Complete 7-page REDESIGN
-- ✅ Home: Hero, About, Categories, Delivery, Trust, Store, CTA
-- ✅ About: Story, Values, Commitment sections
-- ✅ Services: 6 service cards with features
-- ✅ Store: Contact info cards + Google Maps
-- ✅ Contact: Call/WhatsApp/Delivery cards (NO forms)
-- ✅ Privacy Policy & Terms pages
-- ✅ Sticky header with Call/WhatsApp CTAs
-- ✅ Mobile hamburger menu
-- ✅ Correct WhatsApp pre-filled URLs
-- ✅ Footer with all navigation links
+- ✅ Complete 7-page dark theme website
+- ✅ Floating WhatsApp button on all pages
+- ✅ Updated address: Fusion Market, Greater Noida West
+- ✅ Updated timing: 8 AM – 11:30 PM
+- ✅ Green medical cross (+) in logo
+- ✅ Green trust checkmarks
+- ✅ All CTA buttons working (Call Now, WhatsApp)
+- ✅ Google Maps for Greater Noida West
+- ✅ Mobile responsive with hamburger menu
 
 ## Tech Stack
 - React + React Router v7
@@ -36,6 +37,5 @@ Build a complete, production-ready website for a local medical store "City Medic
 - Lucide React Icons
 
 ## Next Tasks
-1. Add actual store GPS coordinates
-2. Add real store photos
-3. Deploy to production domain
+- Add actual store GPS coordinates for precise location
+- Add real store photos if available
