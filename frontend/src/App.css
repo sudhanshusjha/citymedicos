@@ -1,34 +1,157 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* City Medicos Custom Styles */
+
+/* Medical cross pattern background */
+.medical-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 15h6v-5h-6v5zm0 15h6v-5h-6v5zm-2-10h5v-6h-5v6zm10 0h5v-6h-5v6z' fill='%231BAA5E' fill-opacity='0.03'/%3E%3C/svg%3E");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Hero section background */
+.hero-bg {
+  background: linear-gradient(to bottom, #F7F7F7 0%, #FFFFFF 100%);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Category card icon container */
+.category-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #F0F0F0;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.card-custom:hover .category-icon {
+  border-color: #FF4A1C;
+}
+
+/* Sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
+  border-bottom: 2px solid #F0F0F0;
+}
+
+/* WhatsApp button green */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1DA851;
+  transform: scale(1.02);
+}
+
+/* Trust checkmark list */
+.trust-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 18px;
+}
+
+.trust-list li::before {
+  content: none;
+}
+
+/* Map container */
+.map-container {
+  border: 2px solid #F0F0F0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Orange CTA section */
+.cta-orange {
+  background-color: #FF4A1C;
+  color: white;
+}
+
+.cta-orange h2,
+.cta-orange p {
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: #1F1F1F;
+  color: white;
+}
+
+.footer a {
+  color: #CCCCCC;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #FF4A1C;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .whatsapp-btn {
+    padding: 14px 24px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  }
 }
 
-.App-link {
-    color: #61dafb;
+/* Bento grid for categories */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
