@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, MessageCircle, MapPin, Clock } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Clock, Plus } from 'lucide-react';
 
 const PHONE = '9873341450';
 const WA_LINK = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
@@ -8,14 +8,17 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="footer-dark" data-testid="footer">
+    <footer className="footer-main" data-testid="footer">
       <div className="container-main section-gap">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="mb-4">
-              <span className="text-2xl font-black text-[#FF4A1C]" style={{ fontFamily: 'Outfit' }}>CITY MEDICOS</span>
-              <p className="text-xs font-bold tracking-[0.15em] text-[#1BAA5E] mt-1">CHEMIST & DRUGGIST</p>
+            <div className="flex items-center gap-2 mb-4">
+              <Plus size={24} className="text-[#1BAA5E]" strokeWidth={3} />
+              <div>
+                <span className="text-2xl font-black text-[#FF4A1C]" style={{ fontFamily: 'Outfit' }}>CITY MEDICOS</span>
+                <p className="text-xs font-bold tracking-[0.1em] text-white">CHEMIST & DRUGGIST</p>
+              </div>
             </div>
             <p className="text-[#999] mb-6 text-base">
               Your trusted neighborhood pharmacy. Quality medicines, genuine products, and caring service.
@@ -64,14 +67,14 @@ export const Footer = () => {
                 <MapPin size={18} className="text-[#FF4A1C] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-[#999] text-sm">Address</p>
-                  <p className="text-white">Shop No. 5, Main Market, New Delhi – 110001</p>
+                  <p className="text-white">Shop No. 5, Fusion Market, Greater Noida West – 201306</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="text-[#FF4A1C] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-[#999] text-sm">Hours</p>
-                  <p className="text-white">Mon-Sun: 8 AM – 10 PM</p>
+                  <p className="text-white">Mon-Sun: 8 AM – 11:30 PM</p>
                 </div>
               </li>
             </ul>
@@ -81,7 +84,7 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-[#333] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#666]">
           <p>© {year} City Medicos. All rights reserved.</p>
-          <p>Your Health, Our Priority</p>
+          <p className="text-white">Your Health, Our Priority</p>
         </div>
       </div>
     </footer>

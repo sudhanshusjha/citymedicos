@@ -9,18 +9,15 @@
     --primary: #FF4A1C;
     --primary-hover: #E03A10;
     --secondary: #1BAA5E;
-    --secondary-hover: #148F4D;
     --dark: #1F1F1F;
-    --dark-800: #333333;
+    --dark-800: #2A2A2A;
+    --dark-700: #333333;
     --light-200: #E5E5E5;
     --light-100: #F5F5F5;
-    --light-50: #FAFAFA;
     --white: #FFFFFF;
     
     --background: 0 0% 100%;
     --foreground: 0 0% 12%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 12%;
     --border: 0 0% 90%;
     --ring: 13 100% 55%;
     --radius: 0.5rem;
@@ -29,7 +26,7 @@
 
 @layer base {
   * {
-    @apply border-[#E5E5E5];
+    @apply border-[#333];
   }
   
   html {
@@ -40,8 +37,8 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    color: #1F1F1F;
-    background: #FFFFFF;
+    color: #FFFFFF;
+    background: #1F1F1F;
     -webkit-font-smoothing: antialiased;
   }
   
@@ -49,7 +46,7 @@
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     line-height: 1.1;
-    color: #1F1F1F;
+    color: #FFFFFF;
     letter-spacing: -0.02em;
   }
 }
@@ -88,61 +85,77 @@
   
   .btn-outline {
     @apply inline-flex items-center justify-center gap-3 font-bold text-lg px-8 py-4 rounded-full transition-all duration-200 bg-transparent border-2;
-    border-color: #1F1F1F;
-    color: #1F1F1F;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
   }
   .btn-outline:hover {
-    background: #1F1F1F;
-    color: white;
+    background: #FFFFFF;
+    color: #1F1F1F;
   }
   
-  .card-base {
-    @apply bg-white border-2 rounded-2xl p-6 transition-colors duration-200;
-    border-color: #E5E5E5;
+  .card-dark {
+    @apply rounded-2xl p-6 transition-colors duration-200;
+    background: #2A2A2A;
+    border: 2px solid #333;
   }
-  .card-base:hover {
+  .card-dark:hover {
     border-color: #FF4A1C;
   }
   
   .badge-delivery {
     @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold;
-    background: #1BAA5E;
+    background: #FF4A1C;
     color: white;
   }
   
   .link-nav {
     @apply text-lg font-medium transition-colors;
-    color: #1F1F1F;
+    color: #FFFFFF;
   }
   .link-nav:hover, .link-nav.active {
     color: #FF4A1C;
   }
+  
+  .text-muted {
+    color: #999999;
+  }
+  
+  .bg-section-dark {
+    background: #1F1F1F;
+  }
+  
+  .bg-section-darker {
+    background: #181818;
+  }
+  
+  .bg-section-card {
+    background: #2A2A2A;
+  }
 }
 
-/* Focus states for accessibility */
+/* Focus states */
 a:focus-visible,
 button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #FF4A1C;
+  box-shadow: 0 0 0 2px #1F1F1F, 0 0 0 4px #FF4A1C;
 }
 
-/* Subtle pattern background */
-.pattern-crosses {
-  background-image: radial-gradient(#1BAA5E 1px, transparent 1px);
-  background-size: 24px 24px;
-  opacity: 0.03;
+/* Medical cross pattern - green only */
+.medical-cross {
+  color: #1BAA5E;
 }
 
 /* Map container */
 .map-frame {
-  @apply border-2 rounded-2xl overflow-hidden;
-  border-color: #E5E5E5;
+  @apply rounded-2xl overflow-hidden;
+  border: 2px solid #333;
 }
 
 /* Sticky header */
 .header-sticky {
-  @apply sticky top-0 z-50 bg-white;
-  border-bottom: 2px solid #E5E5E5;
+  @apply sticky top-0 z-50;
+  background: #1F1F1F;
+  border-bottom: 2px solid #333;
 }
 
 /* Orange CTA block */
@@ -154,17 +167,55 @@ button:focus-visible {
   color: white;
 }
 
-/* Footer dark */
-.footer-dark {
-  background: #1F1F1F;
-  color: #E5E5E5;
+/* Footer */
+.footer-main {
+  background: #181818;
+  color: #FFFFFF;
 }
-.footer-dark a {
-  color: #E5E5E5;
+.footer-main a {
+  color: #999999;
   transition: color 0.2s;
 }
-.footer-dark a:hover {
+.footer-main a:hover {
   color: #FF4A1C;
+}
+
+/* Trust check - green */
+.trust-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #1BAA5E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Info icons */
+.info-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.info-icon.orange { background: #FF4A1C; }
+.info-icon.green { background: #1BAA5E; }
+
+/* Open pulse - green */
+.open-pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #1BAA5E;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 /* Mobile responsive buttons */
@@ -174,7 +225,7 @@ button:focus-visible {
   }
 }
 
-/* Respect reduced motion */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

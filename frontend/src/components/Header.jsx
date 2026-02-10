@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, MessageCircle, Menu, X, Clock, MapPin } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, Clock, MapPin, Plus } from 'lucide-react';
 
 const PHONE = '9873341450';
 const WA_LINK = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
@@ -20,30 +20,33 @@ export const Header = () => {
   return (
     <header className="header-sticky" data-testid="header">
       {/* Top bar */}
-      <div className="bg-[#F5F5F5] border-b-2 border-[#E5E5E5]">
+      <div className="bg-[#181818] border-b border-[#333]">
         <div className="container-main py-2 flex flex-wrap items-center justify-between gap-2 text-sm">
           <div className="flex items-center gap-2">
-            <Clock size={16} className="text-[#1BAA5E]" />
-            <span className="font-medium">Mon-Sun: 8 AM – 10 PM</span>
+            <Clock size={16} className="text-[#FF4A1C]" />
+            <span className="text-white font-medium">Mon-Sun: 8 AM – 11:30 PM</span>
           </div>
           <div className="flex items-center gap-2">
             <MapPin size={16} className="text-[#FF4A1C]" />
-            <span className="font-medium">Shop No. 5, Main Market, New Delhi</span>
+            <span className="text-white font-medium">Shop No. 5, Fusion Market, Greater Noida West</span>
           </div>
         </div>
       </div>
 
       {/* Main nav */}
-      <nav className="bg-white">
+      <nav className="bg-[#1F1F1F]">
         <div className="container-main py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex flex-col" data-testid="logo">
-            <span className="text-2xl md:text-3xl font-black tracking-tight text-[#FF4A1C]" style={{ fontFamily: 'Outfit' }}>
-              CITY MEDICOS
-            </span>
-            <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-[#1BAA5E] uppercase">
-              Chemist & Druggist
-            </span>
+          <Link to="/" className="flex items-center gap-2" data-testid="logo">
+            <Plus size={28} className="text-[#1BAA5E] medical-cross" strokeWidth={3} />
+            <div className="flex flex-col">
+              <span className="text-2xl md:text-3xl font-black tracking-tight text-[#FF4A1C]" style={{ fontFamily: 'Outfit' }}>
+                CITY MEDICOS
+              </span>
+              <span className="text-xs md:text-sm font-bold tracking-[0.15em] text-white uppercase">
+                Chemist & Druggist
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
@@ -75,7 +78,7 @@ export const Header = () => {
           {/* Mobile toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 -mr-2"
+            className="lg:hidden p-2 -mr-2 text-white"
             aria-label="Menu"
             data-testid="mobile-menu-btn"
           >
@@ -85,7 +88,7 @@ export const Header = () => {
 
         {/* Mobile menu */}
         {open && (
-          <div className="lg:hidden border-t-2 border-[#E5E5E5] bg-white" data-testid="mobile-menu">
+          <div className="lg:hidden border-t border-[#333] bg-[#1F1F1F]" data-testid="mobile-menu">
             <div className="container-main py-4 flex flex-col gap-4">
               {NAV_ITEMS.map((item) => (
                 <Link
@@ -97,7 +100,7 @@ export const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="flex flex-col gap-3 pt-4 border-t-2 border-[#E5E5E5]">
+              <div className="flex flex-col gap-3 pt-4 border-t border-[#333]">
                 <a href={`tel:${PHONE}`} className="btn-call" data-testid="mobile-call">
                   <Phone size={20} strokeWidth={2.5} />
                   <span>Call Now – {PHONE}</span>

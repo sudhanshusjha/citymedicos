@@ -7,14 +7,14 @@ export const Store = () => {
   return (
     <main className="page-fade" data-testid="store-page">
       {/* Hero */}
-      <section className="section-gap bg-[#FAFAFA]">
+      <section className="section-gap bg-[#1F1F1F]">
         <div className="container-main">
           <div className="max-w-3xl">
             <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Visit Us</span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6" style={{ fontFamily: 'Outfit' }}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6" style={{ fontFamily: 'Outfit' }}>
               Store Location & Details
             </h1>
-            <p className="text-xl md:text-2xl text-[#333] leading-relaxed">
+            <p className="text-xl md:text-2xl text-[#CCCCCC] leading-relaxed">
               Find us easily or call for any medicine enquiries. We are here to serve you.
             </p>
           </div>
@@ -22,31 +22,31 @@ export const Store = () => {
       </section>
 
       {/* Store Info */}
-      <section className="section-gap bg-white">
+      <section className="section-gap bg-[#181818]">
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Cards */}
             <div className="space-y-4">
               {/* Phone */}
-              <div className="card-base">
+              <div className="card-dark">
                 <div className="info-card">
                   <div className="info-icon orange"><Phone size={26} className="text-white" /></div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Phone / WhatsApp</h3>
+                    <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Phone / WhatsApp</h3>
                     <a href={`tel:${PHONE}`} className="text-3xl md:text-4xl font-black text-[#FF4A1C] hover:underline block" style={{ fontFamily: 'Outfit' }}>{PHONE}</a>
-                    <p className="text-[#666] mt-2">Call for enquiries, availability, or delivery orders.</p>
+                    <p className="text-[#999] mt-2">Call for enquiries, availability, or delivery orders.</p>
                   </div>
                 </div>
               </div>
 
               {/* Address */}
-              <div className="card-base">
+              <div className="card-dark">
                 <div className="info-card">
-                  <div className="info-icon green"><MapPin size={26} className="text-white" /></div>
+                  <div className="info-icon orange"><MapPin size={26} className="text-white" /></div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Store Address</h3>
-                    <p className="text-lg text-[#333]">Shop No. 5, Main Market,<br />New Delhi – 110001</p>
-                    <a href="https://maps.google.com/?q=New+Delhi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#FF4A1C] font-bold mt-3 hover:underline">
+                    <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Address</h3>
+                    <p className="text-lg text-[#CCCCCC]">Shop No. 5, Fusion Market,<br />Greater Noida West – 201306</p>
+                    <a href="https://maps.google.com/?q=Greater+Noida+West" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#FF4A1C] font-bold mt-3 hover:underline">
                       <Navigation size={16} />
                       Get Directions
                     </a>
@@ -55,12 +55,12 @@ export const Store = () => {
               </div>
 
               {/* Timings */}
-              <div className="card-base">
+              <div className="card-dark">
                 <div className="info-card">
                   <div className="info-icon orange"><Clock size={26} className="text-white" /></div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h3>
-                    <p className="text-lg text-[#333]">Monday – Sunday<br />8:00 AM – 10:00 PM</p>
+                    <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h3>
+                    <p className="text-lg text-[#CCCCCC]">Monday – Sunday<br />8:00 AM – 11:30 PM</p>
                     <div className="flex items-center gap-2 mt-3 text-[#1BAA5E] font-bold">
                       <div className="open-pulse"></div>
                       <span>Open Now – 7 Days a Week</span>
@@ -70,12 +70,12 @@ export const Store = () => {
               </div>
 
               {/* Delivery */}
-              <div className="card-base bg-[#F5F5F5] border-[#1BAA5E]">
+              <div className="card-dark border-[#1BAA5E]">
                 <div className="info-card">
                   <div className="info-icon green"><Truck size={26} className="text-white" /></div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Free Home Delivery</h3>
-                    <p className="text-[#666] mb-4">Cannot visit? We deliver for FREE!</p>
+                    <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Free Home Delivery</h3>
+                    <p className="text-[#999] mb-4">Cannot visit? We deliver for FREE!</p>
                     <div className="flex flex-col sm:flex-row gap-3">
                       <a href={`tel:${PHONE}`} className="btn-call text-base px-5 py-3" data-testid="store-call">
                         <Phone size={18} strokeWidth={2.5} />
@@ -94,7 +94,7 @@ export const Store = () => {
             {/* Map */}
             <div className="map-frame h-[450px] lg:h-full min-h-[450px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1707500000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56045.54471979774!2d77.3910572!3d28.5706976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sGreater%20Noida%20West!5e0!3m2!1sen!2sin!4v1707500000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -111,9 +111,9 @@ export const Store = () => {
       {/* CTA */}
       <section className="cta-block section-gap">
         <div className="container-main text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>Visit Us or Call for Delivery</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Open 7 days a week, 8 AM to 10 PM. Drop by or give us a call!
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>Visit Us or Call for Delivery</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Open 7 days a week, 8 AM to 11:30 PM. Drop by or give us a call!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:${PHONE}`} className="bg-white text-[#FF4A1C] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="store-cta-call">

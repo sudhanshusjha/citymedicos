@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, Truck, Check, Pill, Leaf, Stethoscope, Sparkles, Baby, UserCheck, MapPin, Clock } from 'lucide-react';
+import { Phone, MessageCircle, Truck, Check, Pill, Leaf, Stethoscope, Sparkles, Baby, UserCheck, MapPin, Clock, Plus } from 'lucide-react';
 
 const PHONE = '9873341450';
 const WA_LINK = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
@@ -17,7 +17,7 @@ const TRUST_POINTS = [
   'Genuine medicines from authorized distributors',
   'Competitive pricing with no hidden charges',
   'FREE home delivery across the locality',
-  'Expert pharmacist guidance available',
+  'Expert physician guidance available',
   'All major brands and generics in stock',
   'Emergency medicines available',
   'Trusted by families for generations',
@@ -28,9 +28,8 @@ export const Home = () => {
   return (
     <main className="page-fade" data-testid="home-page">
       {/* HERO */}
-      <section className="section-gap bg-[#FAFAFA] relative overflow-hidden" data-testid="hero">
-        <div className="absolute inset-0 pattern-crosses"></div>
-        <div className="container-main relative">
+      <section className="section-gap bg-[#1F1F1F] relative" data-testid="hero">
+        <div className="container-main">
           <div className="max-w-3xl">
             <div className="badge-delivery mb-6">
               <Truck size={18} strokeWidth={2.5} />
@@ -39,9 +38,9 @@ export const Home = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6" style={{ fontFamily: 'Outfit' }}>
               <span className="text-[#FF4A1C]">CITY MEDICOS</span>
               <br />
-              <span className="text-[#1F1F1F]">Chemist & Druggist</span>
+              <span className="text-white">Chemist & Druggist</span>
             </h1>
-            <p className="text-xl md:text-2xl text-[#333] mb-8 leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-[#CCCCCC] mb-8 leading-relaxed max-w-2xl">
               Your trusted neighborhood pharmacy for medicines, Ayurveda, surgical supplies, cosmetics, baby care & expert health support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -59,38 +58,38 @@ export const Home = () => {
       </section>
 
       {/* ABOUT PREVIEW */}
-      <section className="section-gap bg-white" data-testid="about-preview">
+      <section className="section-gap bg-[#181818]" data-testid="about-preview">
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">About Us</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
                 Your Neighborhood Pharmacy You Can Trust
               </h2>
-              <p className="text-lg text-[#333] mb-4 leading-relaxed">
+              <p className="text-lg text-[#CCCCCC] mb-4 leading-relaxed">
                 City Medicos has been serving our community with dedication. We provide not just medicines, but complete healthcare solutions with a personal touch.
               </p>
-              <p className="text-lg text-[#333] leading-relaxed">
+              <p className="text-lg text-[#CCCCCC] leading-relaxed">
                 From prescriptions to Ayurvedic remedies, surgical supplies to wellness products – we stock everything your family needs.
               </p>
             </div>
-            <div className="bg-[#F5F5F5] border-2 border-[#E5E5E5] rounded-2xl p-8 md:p-10">
+            <div className="bg-[#2A2A2A] border-2 border-[#333] rounded-2xl p-8 md:p-10">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4">
                   <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>6+</div>
-                  <p className="text-[#666] font-medium">Product Categories</p>
+                  <p className="text-[#999] font-medium">Product Categories</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#1BAA5E] mb-2" style={{ fontFamily: 'Outfit' }}>FREE</div>
-                  <p className="text-[#666] font-medium">Home Delivery</p>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>FREE</div>
+                  <p className="text-[#999] font-medium">Home Delivery</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>14+</div>
-                  <p className="text-[#666] font-medium">Hours Daily</p>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>15+</div>
+                  <p className="text-[#999] font-medium">Hours Daily</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#1BAA5E] mb-2" style={{ fontFamily: 'Outfit' }}>100%</div>
-                  <p className="text-[#666] font-medium">Genuine Products</p>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>100%</div>
+                  <p className="text-[#999] font-medium">Genuine Products</p>
                 </div>
               </div>
             </div>
@@ -99,20 +98,20 @@ export const Home = () => {
       </section>
 
       {/* CATEGORIES */}
-      <section className="section-gap bg-[#F5F5F5]" data-testid="categories">
+      <section className="section-gap bg-[#1F1F1F]" data-testid="categories">
         <div className="container-main">
           <div className="text-center mb-12">
             <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">What We Offer</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" style={{ fontFamily: 'Outfit' }}>Our Product Categories</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white" style={{ fontFamily: 'Outfit' }}>Our Product Categories</h2>
           </div>
           <div className="bento-categories">
             {CATEGORIES.map((cat, i) => (
-              <div key={i} className="card-base text-center" data-testid={`category-${cat.name.toLowerCase().replace(/\s/g, '-')}`}>
-                <div className="w-16 h-16 rounded-full border-2 border-[#E5E5E5] bg-white flex items-center justify-center mx-auto mb-4">
+              <div key={i} className="card-dark text-center" data-testid={`category-${cat.name.toLowerCase().replace(/\s/g, '-')}`}>
+                <div className="w-16 h-16 rounded-full border-2 border-[#333] bg-[#1F1F1F] flex items-center justify-center mx-auto mb-4">
                   <cat.icon size={28} className="text-[#FF4A1C]" strokeWidth={2} />
                 </div>
-                <h3 className="text-lg font-bold mb-1" style={{ fontFamily: 'Outfit' }}>{cat.name}</h3>
-                <p className="text-sm text-[#666]">{cat.desc}</p>
+                <h3 className="text-lg font-bold text-white mb-1" style={{ fontFamily: 'Outfit' }}>{cat.name}</h3>
+                <p className="text-sm text-[#999]">{cat.desc}</p>
               </div>
             ))}
           </div>
@@ -120,16 +119,16 @@ export const Home = () => {
       </section>
 
       {/* HOME DELIVERY */}
-      <section className="section-gap bg-white" data-testid="delivery">
+      <section className="section-gap bg-[#181818]" data-testid="delivery">
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-[#FF4A1C] text-white rounded-2xl p-8 md:p-12">
-                <Truck size={56} className="mb-6" strokeWidth={1.5} />
-                <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'Outfit', color: 'white' }}>
+              <div className="bg-[#FF4A1C] rounded-2xl p-8 md:p-12">
+                <Truck size={56} className="text-white mb-6" strokeWidth={1.5} />
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Outfit' }}>
                   Home Delivery on Call
                 </h3>
-                <p className="text-lg mb-8 opacity-90">
+                <p className="text-lg text-white/90 mb-8">
                   Call or WhatsApp us with your prescription. We deliver medicines to your doorstep – FREE!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -145,17 +144,17 @@ export const Home = () => {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-[#1BAA5E] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Free Service</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
+              <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Free Service</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
                 Get Medicines Delivered to Your Door
               </h2>
-              <p className="text-lg text-[#333] mb-6 leading-relaxed">
-                No need to step out. Call <strong>{PHONE}</strong> or WhatsApp your prescription.
+              <p className="text-lg text-[#CCCCCC] mb-6 leading-relaxed">
+                No need to step out. Call <strong className="text-white">{PHONE}</strong> or WhatsApp your prescription.
               </p>
               <ul className="space-y-4">
                 {['Call or WhatsApp your order', 'Share prescription if needed', 'Confirm order & address', 'Receive at your doorstep'].map((s, i) => (
-                  <li key={i} className="flex items-center gap-4 text-lg">
-                    <div className="w-8 h-8 rounded-full bg-[#1BAA5E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
+                  <li key={i} className="flex items-center gap-4 text-lg text-white">
+                    <div className="w-8 h-8 rounded-full bg-[#FF4A1C] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
                     <span>{s}</span>
                   </li>
                 ))}
@@ -166,22 +165,25 @@ export const Home = () => {
       </section>
 
       {/* TRUST */}
-      <section className="section-gap bg-[#FAFAFA]" data-testid="trust">
+      <section className="section-gap bg-[#1F1F1F]" data-testid="trust">
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-[#1BAA5E] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Why Choose Us</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
+              <div className="flex items-center gap-2 mb-4">
+                <Plus size={20} className="text-[#1BAA5E]" strokeWidth={3} />
+                <span className="text-[#1BAA5E] font-bold text-sm tracking-[0.15em] uppercase">Why Choose Us</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
                 Why Customers Trust City Medicos
               </h2>
-              <p className="text-lg text-[#333] leading-relaxed">
+              <p className="text-lg text-[#CCCCCC] leading-relaxed">
                 We have built our reputation on trust, quality, and service. Here is why families choose City Medicos.
               </p>
             </div>
-            <div className="bg-white border-2 border-[#E5E5E5] rounded-2xl p-6 md:p-8">
+            <div className="bg-[#2A2A2A] border-2 border-[#333] rounded-2xl p-6 md:p-8">
               <ul className="space-y-3">
                 {TRUST_POINTS.map((p, i) => (
-                  <li key={i} className="flex items-start gap-3 text-base md:text-lg">
+                  <li key={i} className="flex items-start gap-3 text-base md:text-lg text-white">
                     <div className="trust-check mt-0.5"><Check size={14} className="text-white" strokeWidth={3} /></div>
                     <span>{p}</span>
                   </li>
@@ -193,38 +195,38 @@ export const Home = () => {
       </section>
 
       {/* STORE DETAILS */}
-      <section className="section-gap bg-white" data-testid="store-preview">
+      <section className="section-gap bg-[#181818]" data-testid="store-preview">
         <div className="container-main">
           <div className="text-center mb-12">
             <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Visit Us</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" style={{ fontFamily: 'Outfit' }}>Store Location</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white" style={{ fontFamily: 'Outfit' }}>Store Location</h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <div className="card-base">
+              <div className="card-dark">
                 <div className="info-card">
                   <div className="info-icon orange"><Phone size={24} className="text-white" /></div>
                   <div>
-                    <h4 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Phone / WhatsApp</h4>
+                    <h4 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Phone / WhatsApp</h4>
                     <a href={`tel:${PHONE}`} className="text-2xl font-black text-[#FF4A1C] hover:underline" style={{ fontFamily: 'Outfit' }}>{PHONE}</a>
                   </div>
                 </div>
               </div>
-              <div className="card-base">
+              <div className="card-dark">
                 <div className="info-card">
-                  <div className="info-icon green"><MapPin size={24} className="text-white" /></div>
+                  <div className="info-icon orange"><MapPin size={24} className="text-white" /></div>
                   <div>
-                    <h4 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Address</h4>
-                    <p className="text-[#333]">Shop No. 5, Main Market,<br />New Delhi – 110001</p>
+                    <h4 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Address</h4>
+                    <p className="text-[#CCCCCC]">Shop No. 5, Fusion Market,<br />Greater Noida West – 201306</p>
                   </div>
                 </div>
               </div>
-              <div className="card-base">
+              <div className="card-dark">
                 <div className="info-card">
                   <div className="info-icon orange"><Clock size={24} className="text-white" /></div>
                   <div>
-                    <h4 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h4>
-                    <p className="text-[#333]">Monday – Sunday<br />8:00 AM – 10:00 PM</p>
+                    <h4 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h4>
+                    <p className="text-[#CCCCCC]">Monday – Sunday<br />8:00 AM – 11:30 PM</p>
                     <div className="flex items-center gap-2 mt-2 text-[#1BAA5E] font-bold text-sm">
                       <div className="open-pulse"></div>
                       <span>Open Now</span>
@@ -235,7 +237,7 @@ export const Home = () => {
             </div>
             <div className="map-frame h-[350px] lg:h-full min-h-[350px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1707500000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56045.54471979774!2d77.3910572!3d28.5706976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sGreater%20Noida%20West!5e0!3m2!1sen!2sin!4v1707500000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -252,10 +254,10 @@ export const Home = () => {
       {/* CTA */}
       <section className="cta-block section-gap" data-testid="cta">
         <div className="container-main text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
             Need Medicines? We Are Just a Call Away!
           </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Call us now for enquiries, availability check, or to place a delivery order.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
