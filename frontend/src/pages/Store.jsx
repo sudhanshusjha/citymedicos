@@ -10,7 +10,7 @@ export const Store = () => {
       <section className="section-gap bg-[#1F1F1F]">
         <div className="container-main">
           <div className="max-w-3xl">
-            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Visit Us</span>
+            <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Visit Us</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6" style={{ fontFamily: 'Outfit' }}>
               Store Location & Details
             </h1>
@@ -33,7 +33,7 @@ export const Store = () => {
                   <div className="info-icon orange"><Phone size={26} className="text-white" /></div>
                   <div className="flex-1">
                     <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Phone / WhatsApp</h3>
-                    <a href={`tel:${PHONE}`} className="text-3xl md:text-4xl font-black text-[#FF4A1C] hover:underline block" style={{ fontFamily: 'Outfit' }}>{PHONE}</a>
+                    <a href={`tel:${PHONE}`} className="text-3xl md:text-4xl font-black text-[#FF6B00] hover:underline block" style={{ fontFamily: 'Outfit' }}>{PHONE}</a>
                     <p className="text-[#999] mt-2">Call for enquiries, availability, or delivery orders.</p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ export const Store = () => {
                   <div className="flex-1">
                     <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Address</h3>
                     <p className="text-lg text-[#CCCCCC]">Shop No. 5, Fusion Market,<br />Greater Noida West – 201306</p>
-                    <a href="https://maps.google.com/?q=Greater+Noida+West" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#FF4A1C] font-bold mt-3 hover:underline">
+                    <a href="https://maps.google.com/?q=Greater+Noida+West" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#FF6B00] font-bold mt-3 hover:underline">
                       <Navigation size={16} />
                       Get Directions
                     </a>
@@ -116,7 +116,7 @@ export const Store = () => {
             Open 7 days a week, 8 AM to 11:30 PM. Drop by or give us a call!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`tel:${PHONE}`} className="bg-white text-[#FF4A1C] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="store-cta-call">
+            <a href={`tel:${PHONE}`} className="bg-white text-[#FF6B00] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="store-cta-call">
               <Phone size={24} strokeWidth={2.5} />
               <span>Call Now – {PHONE}</span>
             </a>

@@ -16,7 +16,7 @@ export const Footer = () => {
             <div className="flex items-center gap-2 mb-4">
               <Plus size={24} className="text-[#1BAA5E]" strokeWidth={3} />
               <div>
-                <span className="text-2xl font-black text-[#FF4A1C]" style={{ fontFamily: 'Outfit' }}>CITY MEDICOS</span>
+                <span className="text-2xl font-black text-[#FF6B00]" style={{ fontFamily: 'Outfit' }}>CITY MEDICOS</span>
                 <p className="text-xs font-bold tracking-[0.1em] text-white">CHEMIST & DRUGGIST</p>
               </div>
             </div>
@@ -24,7 +24,7 @@ export const Footer = () => {
               Your trusted neighborhood pharmacy. Quality medicines, genuine products, and caring service.
             </p>
             <div className="flex gap-3">
-              <a href={`tel:${PHONE}`} className="w-11 h-11 rounded-full bg-[#FF4A1C] flex items-center justify-center hover:scale-105 transition-transform" aria-label="Call" data-testid="footer-call">
+              <a href={`tel:${PHONE}`} className="w-11 h-11 rounded-full bg-[#FF6B00] flex items-center justify-center hover:scale-105 transition-transform" aria-label="Call" data-testid="footer-call">
                 <Phone size={18} className="text-white" />
               </a>
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-105 transition-transform" aria-label="WhatsApp" data-testid="footer-whatsapp">
@@ -57,21 +57,21 @@ export const Footer = () => {
             <h4 className="text-lg font-bold text-white mb-4" style={{ fontFamily: 'Outfit' }}>Contact</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone size={18} className="text-[#FF4A1C] mt-1 flex-shrink-0" />
+                <Phone size={18} className="text-[#FF6B00] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-[#999] text-sm">Call / WhatsApp</p>
                   <a href={`tel:${PHONE}`} className="text-white font-bold text-lg">{PHONE}</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-[#FF4A1C] mt-1 flex-shrink-0" />
+                <MapPin size={18} className="text-[#FF6B00] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-[#999] text-sm">Address</p>
                   <p className="text-white">Shop No. 5, Fusion Market, Greater Noida West – 201306</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <Clock size={18} className="text-[#FF4A1C] mt-1 flex-shrink-0" />
+                <Clock size={18} className="text-[#FF6B00] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-[#999] text-sm">Hours</p>
                   <p className="text-white">Mon-Sun: 8 AM – 11:30 PM</p>

@@ -36,7 +36,7 @@ export const Home = () => {
               <span>FREE HOME DELIVERY</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6" style={{ fontFamily: 'Outfit' }}>
-              <span className="text-[#FF4A1C]">CITY MEDICOS</span>
+              <span className="text-[#FF6B00]">CITY MEDICOS</span>
               <br />
               <span className="text-white">Chemist & Druggist</span>
             </h1>
@@ -62,7 +62,7 @@ export const Home = () => {
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">About Us</span>
+              <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">About Us</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
                 Your Neighborhood Pharmacy You Can Trust
               </h2>
@@ -76,19 +76,19 @@ export const Home = () => {
             <div className="bg-[#2A2A2A] border-2 border-[#333] rounded-2xl p-8 md:p-10">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>6+</div>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF6B00] mb-2" style={{ fontFamily: 'Outfit' }}>6+</div>
                   <p className="text-[#999] font-medium">Product Categories</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>FREE</div>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF6B00] mb-2" style={{ fontFamily: 'Outfit' }}>FREE</div>
                   <p className="text-[#999] font-medium">Home Delivery</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>15+</div>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF6B00] mb-2" style={{ fontFamily: 'Outfit' }}>15+</div>
                   <p className="text-[#999] font-medium">Hours Daily</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>100%</div>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF6B00] mb-2" style={{ fontFamily: 'Outfit' }}>100%</div>
                   <p className="text-[#999] font-medium">Genuine Products</p>
                 </div>
               </div>
@@ -101,14 +101,14 @@ export const Home = () => {
       <section className="section-gap bg-[#1F1F1F]" data-testid="categories">
         <div className="container-main">
           <div className="text-center mb-12">
-            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">What We Offer</span>
+            <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">What We Offer</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white" style={{ fontFamily: 'Outfit' }}>Our Product Categories</h2>
           </div>
           <div className="bento-categories">
             {CATEGORIES.map((cat, i) => (
               <div key={i} className="card-dark text-center" data-testid={`category-${cat.name.toLowerCase().replace(/\s/g, '-')}`}>
                 <div className="w-16 h-16 rounded-full border-2 border-[#333] bg-[#1F1F1F] flex items-center justify-center mx-auto mb-4">
-                  <cat.icon size={28} className="text-[#FF4A1C]" strokeWidth={2} />
+                  <cat.icon size={28} className="text-[#FF6B00]" strokeWidth={2} />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-1" style={{ fontFamily: 'Outfit' }}>{cat.name}</h3>
                 <p className="text-sm text-[#999]">{cat.desc}</p>
@@ -123,7 +123,7 @@ export const Home = () => {
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-[#FF4A1C] rounded-2xl p-8 md:p-12">
+              <div className="bg-[#FF6B00] rounded-2xl p-8 md:p-12">
                 <Truck size={56} className="text-white mb-6" strokeWidth={1.5} />
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Outfit' }}>
                   Home Delivery on Call
@@ -132,7 +132,7 @@ export const Home = () => {
                   Call or WhatsApp us with your prescription. We deliver medicines to your doorstep – FREE!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href={WA_DELIVERY} target="_blank" rel="noopener noreferrer" className="bg-white text-[#FF4A1C] px-6 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 hover:scale-102 transition-transform" data-testid="delivery-wa">
+                  <a href={WA_DELIVERY} target="_blank" rel="noopener noreferrer" className="bg-white text-[#FF6B00] px-6 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 hover:scale-102 transition-transform" data-testid="delivery-wa">
                     <MessageCircle size={20} strokeWidth={2.5} />
                     <span>Order via WhatsApp</span>
                   </a>
@@ -144,7 +144,7 @@ export const Home = () => {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Free Service</span>
+              <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Free Service</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
                 Get Medicines Delivered to Your Door
               </h2>
@@ -154,7 +154,7 @@ export const Home = () => {
               <ul className="space-y-4">
                 {['Call or WhatsApp your order', 'Share prescription if needed', 'Confirm order & address', 'Receive at your doorstep'].map((s, i) => (
                   <li key={i} className="flex items-center gap-4 text-lg text-white">
-                    <div className="w-8 h-8 rounded-full bg-[#FF4A1C] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
+                    <div className="w-8 h-8 rounded-full bg-[#FF6B00] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
                     <span>{s}</span>
                   </li>
                 ))}
@@ -198,7 +198,7 @@ export const Home = () => {
       <section className="section-gap bg-[#181818]" data-testid="store-preview">
         <div className="container-main">
           <div className="text-center mb-12">
-            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Visit Us</span>
+            <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Visit Us</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white" style={{ fontFamily: 'Outfit' }}>Store Location</h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-8">
@@ -208,7 +208,7 @@ export const Home = () => {
                   <div className="info-icon orange"><Phone size={24} className="text-white" /></div>
                   <div>
                     <h4 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Phone / WhatsApp</h4>
-                    <a href={`tel:${PHONE}`} className="text-2xl font-black text-[#FF4A1C] hover:underline" style={{ fontFamily: 'Outfit' }}>{PHONE}</a>
+                    <a href={`tel:${PHONE}`} className="text-2xl font-black text-[#FF6B00] hover:underline" style={{ fontFamily: 'Outfit' }}>{PHONE}</a>
                   </div>
                 </div>
               </div>
@@ -261,7 +261,7 @@ export const Home = () => {
             Call us now for enquiries, availability check, or to place a delivery order.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`tel:${PHONE}`} className="bg-white text-[#FF4A1C] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="cta-call">
+            <a href={`tel:${PHONE}`} className="bg-white text-[#FF6B00] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="cta-call">
               <Phone size={24} strokeWidth={2.5} />
               <span>Call Now – {PHONE}</span>
             </a>

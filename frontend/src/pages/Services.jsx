@@ -20,7 +20,7 @@ export const Services = () => {
       <section className="section-gap bg-[#1F1F1F]">
         <div className="container-main">
           <div className="max-w-3xl">
-            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Our Services</span>
+            <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Our Services</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6" style={{ fontFamily: 'Outfit' }}>
               Complete Healthcare Under One Roof
             </h1>
@@ -37,7 +37,7 @@ export const Services = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES.map((s, i) => (
               <div key={i} className="card-dark" data-testid={`service-${s.title.toLowerCase().replace(/\s/g, '-')}`}>
-                <div className="w-14 h-14 rounded-full bg-[#FF4A1C] flex items-center justify-center mb-5">
+                <div className="w-14 h-14 rounded-full bg-[#FF6B00] flex items-center justify-center mb-5">
                   <s.icon size={28} className="text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2" style={{ fontFamily: 'Outfit' }}>{s.title}</h3>
@@ -72,7 +72,7 @@ export const Services = () => {
               <ul className="space-y-4 mb-8">
                 {['Call or send prescription via WhatsApp', 'Confirm order and address', 'Receive at your doorstep'].map((s, i) => (
                   <li key={i} className="flex items-center gap-4 text-lg text-white">
-                    <div className="w-8 h-8 rounded-full bg-[#FF4A1C] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
+                    <div className="w-8 h-8 rounded-full bg-[#FF6B00] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
                     <span>{s}</span>
                   </li>
                 ))}
@@ -92,7 +92,7 @@ export const Services = () => {
               <h3 className="text-xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>Delivery Info</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#FF4A1C] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#FF6B00] flex items-center justify-center flex-shrink-0">
                     <Truck size={22} className="text-white" />
                   </div>
                   <div>
@@ -101,7 +101,7 @@ export const Services = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#FF4A1C] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#FF6B00] flex items-center justify-center flex-shrink-0">
                     <Clock size={22} className="text-white" />
                   </div>
                   <div>
@@ -110,7 +110,7 @@ export const Services = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#FF4A1C] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#FF6B00] flex items-center justify-center flex-shrink-0">
                     <Check size={22} className="text-white" />
                   </div>
                   <div>
@@ -132,7 +132,7 @@ export const Services = () => {
             Call us now to check availability or place an order.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`tel:${PHONE}`} className="bg-white text-[#FF4A1C] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="services-cta-call">
+            <a href={`tel:${PHONE}`} className="bg-white text-[#FF6B00] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="services-cta-call">
               <Phone size={24} strokeWidth={2.5} />
               <span>Call Now – {PHONE}</span>
             </a>

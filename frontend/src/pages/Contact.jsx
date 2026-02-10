@@ -11,7 +11,7 @@ export const Contact = () => {
       <section className="section-gap bg-[#1F1F1F]">
         <div className="container-main">
           <div className="max-w-3xl">
-            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Contact Us</span>
+            <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Contact Us</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6" style={{ fontFamily: 'Outfit' }}>
               Get in Touch With Us
             </h1>
@@ -29,7 +29,7 @@ export const Contact = () => {
             {/* Notice */}
             <div className="bg-[#2A2A2A] border-2 border-[#333] rounded-2xl p-6 mb-12 text-center">
               <p className="text-lg text-white">
-                <strong className="text-[#FF4A1C]">For fastest service</strong>, call or message us directly. We respond immediately during store hours.
+                <strong className="text-[#FF6B00]">For fastest service</strong>, call or message us directly. We respond immediately during store hours.
               </p>
             </div>
 
@@ -37,11 +37,11 @@ export const Contact = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               {/* Call */}
               <a href={`tel:${PHONE}`} className="card-dark text-center group" data-testid="contact-call-card">
-                <div className="w-20 h-20 rounded-full bg-[#FF4A1C] flex items-center justify-center mx-auto mb-5 group-hover:scale-105 transition-transform">
+                <div className="w-20 h-20 rounded-full bg-[#FF6B00] flex items-center justify-center mx-auto mb-5 group-hover:scale-105 transition-transform">
                   <Phone size={36} className="text-white" strokeWidth={2} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2" style={{ fontFamily: 'Outfit' }}>Call Now</h3>
-                <p className="text-2xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>{PHONE}</p>
+                <p className="text-2xl font-black text-[#FF6B00] mb-2" style={{ fontFamily: 'Outfit' }}>{PHONE}</p>
                 <p className="text-[#999] text-sm">Tap to call directly</p>
               </a>
 
@@ -70,7 +70,7 @@ export const Contact = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-dark">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#FF4A1C] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#FF6B00] flex items-center justify-center flex-shrink-0">
                     <MapPin size={22} className="text-white" />
                   </div>
                   <div>
@@ -81,7 +81,7 @@ export const Contact = () => {
               </div>
               <div className="card-dark">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#FF4A1C] flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#FF6B00] flex items-center justify-center flex-shrink-0">
                     <Clock size={22} className="text-white" />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ export const Contact = () => {
             Medicine enquiry or home delivery – we are here for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`tel:${PHONE}`} className="bg-white text-[#FF4A1C] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="contact-cta-call">
+            <a href={`tel:${PHONE}`} className="bg-white text-[#FF6B00] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="contact-cta-call">
               <Phone size={24} strokeWidth={2.5} />
               <span>Call Now – {PHONE}</span>
             </a>

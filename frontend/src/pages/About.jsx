@@ -28,7 +28,7 @@ export const About = () => {
       <section className="section-gap bg-[#1F1F1F]">
         <div className="container-main">
           <div className="max-w-3xl">
-            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">About Us</span>
+            <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">About Us</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6" style={{ fontFamily: 'Outfit' }}>
               Your Trusted Neighborhood Pharmacy
             </h1>
@@ -56,7 +56,7 @@ export const About = () => {
                 Today, we offer prescription medicines, Ayurvedic remedies, surgical supplies, cosmetics, baby products, and more. Our experienced physician is always ready to assist.
               </p>
             </div>
-            <div className="bg-[#FF4A1C] rounded-2xl p-8 md:p-10">
+            <div className="bg-[#FF6B00] rounded-2xl p-8 md:p-10">
               <h3 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: 'Outfit' }}>Our Mission</h3>
               <p className="text-lg text-white/90 mb-6 leading-relaxed">
                 To be the most trusted neighborhood pharmacy – providing genuine healthcare products with personalized service.
@@ -76,13 +76,13 @@ export const About = () => {
       <section className="section-gap bg-[#1F1F1F]">
         <div className="container-main">
           <div className="text-center mb-12">
-            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">What We Stand For</span>
+            <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">What We Stand For</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: 'Outfit' }}>Our Core Values</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {VALUES.map((v, i) => (
               <div key={i} className="card-dark text-center">
-                <div className="w-14 h-14 rounded-full bg-[#FF4A1C] flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 rounded-full bg-[#FF6B00] flex items-center justify-center mx-auto mb-4">
                   <v.icon size={28} className="text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2" style={{ fontFamily: 'Outfit' }}>{v.title}</h3>
@@ -98,7 +98,7 @@ export const About = () => {
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Our Promise</span>
+              <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Our Promise</span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>Our Commitment to You</h2>
               <p className="text-lg text-[#CCCCCC] leading-relaxed">
                 At City Medicos, we are committed to providing the best healthcare experience. Here is what you can always expect.
@@ -126,7 +126,7 @@ export const About = () => {
             Visit us today or call for any medicine enquiries. We are here to serve you!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`tel:${PHONE}`} className="bg-white text-[#FF4A1C] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="about-cta-call">
+            <a href={`tel:${PHONE}`} className="bg-white text-[#FF6B00] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="about-cta-call">
               <Phone size={24} strokeWidth={2.5} />
               <span>Call Now</span>
             </a>
