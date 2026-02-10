@@ -1,140 +1,152 @@
 {
-  "identity": {
-    "persona": "E1 - The Anti-AI Designer",
-    "mission": "Create a high-trust, production-ready website for City Medicos that breaks the 'generic medical' mold while remaining accessible to the elderly.",
-    "principles": [
-      "Fusion over Imitation: Swiss Medical Precision x Neighborhood Warmth",
-      "Emotion First: Trust, Urgency, Care",
-      "Content is King: Phone numbers and 'Call Now' buttons are the heroes",
-      "Zoom In: Big, legible text and clear, high-contrast actions",
-      "Negative Space: generous padding to reduce cognitive load",
-      "Contrast: High contrast (Black/White/Orange) is mandatory for visibility"
+  "project_name": "City Medicos – Chemist & Druggist",
+  "design_philosophy": {
+    "name": "Swiss Medical Vitality",
+    "description": "A high-trust, functional design inspired by Swiss International Style. It prioritizes clarity, legibility, and action over decoration. It uses strict grids, flat colors, and bold typography to create a sense of reliability and modern efficiency without the 'tech startup' fluff.",
+    "core_principles": [
+      "Function over Form: Every element serves the goal of driving a call or visit.",
+      "High Contrast & Legibility: Optimized for elderly eyes. No low-contrast grey text.",
+      "Flat & Bold: No shadows, no gradients. Depth is created via borders and spacing.",
+      "Local Trust: Uses imagery and language that feels like a neighborhood staple, not a faceless corporation."
     ]
-  },
-  "theme": {
-    "mode": "light",
-    "style_archetype": "Swiss & High-Contrast",
-    "vibe": "Clinical, Neighborly, Urgent, Trusted",
-    "core_concept": "The Digital Signage - Big, Bold, Direct"
   },
   "typography": {
     "font_family": {
-      "headings": "Outfit, sans-serif",
-      "body": "Public Sans, sans-serif",
-      "mono": "JetBrains Mono, monospace"
+      "headings": "\"Outfit\", sans-serif",
+      "body": "\"DM Sans\", sans-serif",
+      "mono": "\"JetBrains Mono\", monospace"
     },
     "scale": {
-      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
-      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
-      "h3": "text-2xl md:text-3xl font-medium",
-      "body_lg": "text-xl md:text-2xl leading-relaxed",
-      "body": "text-lg leading-relaxed",
-      "caption": "text-sm font-medium tracking-wide uppercase"
+      "xs": "0.875rem",
+      "sm": "1rem",
+      "base": "1.125rem",
+      "lg": "1.25rem",
+      "xl": "1.5rem",
+      "2xl": "2rem",
+      "3xl": "2.5rem",
+      "4xl": "3.5rem",
+      "5xl": "4.5rem",
+      "6xl": "5.5rem"
     },
-    "rules": [
-      "Headings must never use Inter.",
-      "Body text must be at least 18px (text-lg) for elderly readability.",
-      "Use heavy weights (600/700) for key information like phone numbers.",
-      "Line height should be generous (1.6) for body text."
-    ]
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "bold": 700,
+      "black": 900
+    },
+    "letter_spacing": {
+      "tight": "-0.02em",
+      "normal": "0em",
+      "wide": "0.05em"
+    },
+    "line_height": {
+      "tight": 1.1,
+      "relaxed": 1.6
+    }
   },
   "colors": {
-    "palette": {
-      "primary": "#FF4A1C",
-      "primary_foreground": "#FFFFFF",
-      "secondary": "#1BAA5E",
-      "secondary_foreground": "#FFFFFF",
-      "background": "#FFFFFF",
-      "foreground": "#1F1F1F",
-      "muted": "#F7F7F7",
-      "muted_foreground": "#64748B",
-      "border": "#E2E8F0",
-      "accent": "#FFF7ED"
+    "primary": {
+      "main": "#FF4A1C",
+      "hover": "#E03A10",
+      "foreground": "#FFFFFF"
     },
-    "usage": {
-      "primary": "Main Brand Color - Use for Primary CTAs (Call Now), Borders, Highlights",
-      "secondary": "Trust Indicators - Medical Crosses, Success States, 'Open Now' tags",
-      "background": "Pure White for maximum contrast",
-      "text": "Almost Black (#1F1F1F) for sharp readability against white"
+    "secondary": {
+      "main": "#1BAA5E",
+      "hover": "#148F4D",
+      "foreground": "#FFFFFF"
     },
-    "forbidden": [
-      "Blue (Any shade)",
-      "Gradients",
-      "Drop Shadows (Use borders instead)"
-    ]
+    "neutral": {
+      "900": "#1F1F1F",
+      "800": "#333333",
+      "200": "#E5E5E5",
+      "100": "#F5F5F5",
+      "50": "#FAFAFA",
+      "white": "#FFFFFF"
+    },
+    "status": {
+      "success": "#1BAA5E",
+      "error": "#DC2626",
+      "warning": "#F59E0B",
+      "info": "#3B82F6"
+    }
   },
   "layout": {
-    "grid_system": "Bento Grid Mode A (Tetris Grid)",
-    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "container": {
+      "max_width": "1280px",
+      "padding_x": "2rem",
+      "padding_y": "4rem"
+    },
+    "grid": {
+      "columns": 12,
+      "gap": "2rem"
+    },
     "spacing": {
-      "section_padding": "py-20 md:py-32",
-      "element_gap": "gap-6 md:gap-12"
+      "section": "6rem",
+      "element": "1.5rem"
     },
     "border_radius": {
-      "default": "rounded-none",
-      "buttons": "rounded-full"
-    },
-    "strategies": [
-      "Mobile First: Stack everything vertically on mobile.",
-      "The 'Bento' Grid: Use mixed span sizes for categories.",
-      "No Floating Elements: Everything must feel grounded and solid.",
-      "Border Heavy: Use 1px or 2px borders to define areas instead of shadows."
-    ]
+      "none": "0px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "full": "9999px"
+    }
   },
   "components": {
     "buttons": {
-      "primary": "bg-[#FF4A1C] text-white hover:bg-[#E03A10] rounded-full px-8 py-6 text-xl font-bold transition-transform hover:scale-105",
-      "secondary": "bg-[#1BAA5E] text-white hover:bg-[#148F4D] rounded-full px-8 py-6 text-xl font-bold",
-      "outline": "border-2 border-[#1F1F1F] text-[#1F1F1F] hover:bg-[#1F1F1F] hover:text-white rounded-full px-8 py-6 text-lg font-medium"
+      "base": "inline-flex items-center justify-center font-bold transition-transform active:scale-95 disabled:opacity-50 disabled:pointer-events-none",
+      "variants": {
+        "primary": "bg-[#FF4A1C] text-white hover:bg-[#E03A10] rounded-full px-8 py-4 text-lg border-2 border-transparent shadow-none",
+        "secondary": "bg-[#1BAA5E] text-white hover:bg-[#148F4D] rounded-full px-8 py-4 text-lg border-2 border-transparent shadow-none",
+        "outline": "bg-transparent text-[#1F1F1F] border-2 border-[#1F1F1F] hover:bg-[#1F1F1F] hover:text-white rounded-full px-8 py-4 text-lg shadow-none",
+        "ghost": "bg-transparent text-[#1F1F1F] hover:bg-[#F5F5F5] rounded-lg px-4 py-2"
+      }
     },
     "cards": {
-      "style": "bg-white border-2 border-[#F0F0F0] hover:border-[#FF4A1C] transition-colors p-8 rounded-xl",
-      "content_alignment": "left-aligned"
+      "base": "bg-white border-2 border-[#E5E5E5] p-6 rounded-2xl transition-colors duration-200",
+      "hover": "hover:border-[#FF4A1C]",
+      "interactive": "cursor-pointer active:scale-[0.98]"
     },
-    "navigation": {
-      "style": "Sticky header, white background, distinct bottom border. Massive 'Call Now' button in nav."
+    "inputs": {
+      "base": "bg-white border-2 border-[#E5E5E5] text-[#1F1F1F] px-4 py-3 rounded-lg focus:outline-none focus:border-[#FF4A1C] placeholder:text-gray-400 text-lg",
+      "label": "block text-sm font-bold text-[#1F1F1F] mb-2 uppercase tracking-wide"
     }
   },
   "visual_enhancers": {
-    "textures": "Subtle noise overlay allowed on colored backgrounds to prevent flatness.",
-    "icons": "Phosphor Icons (Bold or Fill weight) - Medical Cross, Phone, WhatsApp, Pill, Truck",
-    "decorations": "Geometric Medical Crosses patterns in background (opacity 5%)."
+    "borders": "2px solid #E5E5E5",
+    "active_border": "2px solid #FF4A1C",
+    "patterns": {
+      "grid": "bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20",
+      "crosses": "bg-[radial-gradient(#1BAA5E_1px,transparent_1px)] [background-size:16px_16px]"
+    },
+    "icons": "Lucide React (already installed). Use Stroke Width 2px or 2.5px for boldness."
   },
   "images": {
-    "strategy": "Authentic, Warm, Local. Avoid sterile stock photos where possible.",
-    "mapped_urls": {
-      "hero_bg": "https://images.unsplash.com/photo-1695398170358-99749f64c887",
-      "delivery_scooter": "https://images.unsplash.com/photo-1713111392241-1a9a9861f1ba",
-      "elderly_trust": "https://images.unsplash.com/photo-1738235337917-92d500d6711f",
-      "ayurveda": "https://images.unsplash.com/photo-1734607402896-73dc3ed1f2c9",
-      "pharmacist": "https://images.unsplash.com/flagged/photo-1565293219648-a3d94b5d1def"
+    "hero_scooter": "https://images.unsplash.com/photo-1754257503656-58b822d78e28?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "store_shelves_bg": "https://images.unsplash.com/photo-1754321159253-8c9bd02cfb4c?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "categories": {
+      "medicine": "https://images.unsplash.com/photo-1758631279366-8e8aeaf94082?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "ayurveda": "https://images.unsplash.com/photo-1671108503276-1d3d5ab23a3a?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "baby_care": "https://images.unsplash.com/photo-1760273464017-4bb7dfa42d91?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "surgical": "https://images.unsplash.com/photo-1651326659270-59bbb788199a?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "cosmetics": "https://images.unsplash.com/photo-1611072965169-e1534f6f300c?crop=entropy&cs=srgb&fm=jpg&q=85"
     },
-    "placeholders": "Use colored blocks with bold typography if specific image is missing."
-  },
-  "motion": {
-    "reduced_motion": "Respect prefers-reduced-motion",
-    "hover_effects": "Simple color shifts and scale up (1.02x). No complex 3D flips.",
-    "transitions": "transition-all duration-300 ease-out"
+    "trust_green_cross": "https://images.unsplash.com/photo-1768327504066-c2d0a44b743e?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "map_placeholder": "https://placehold.co/600x400/F5F5F5/1F1F1F?text=Map+Location"
   },
   "accessibility": {
-    "contrast": "Strict WCAG AAA compliance for text.",
-    "focus_states": "Visible thick outline (2px) in #1F1F1F or #FF4A1C.",
-    "font_sizing": "Minimum 18px for body text."
+    "min_contrast_ratio": 4.5,
+    "focus_state": "outline-none ring-2 ring-[#FF4A1C] ring-offset-2",
+    "reduced_motion": "respect-media-query"
   },
-  "instructions_to_main_agent": [
-    "Do not use gradients or shadows. This is a flat design constraint.",
-    "Use the color #FF4A1C as the primary brand color. Do not use Blue.",
-    "Prioritize the phone number: 9873341450. It should be visible at all times.",
-    "Ensure the layout is mobile-optimized first.",
-    "Use 'Outfit' font for headings and 'Public Sans' for body.",
-    "Implement the 'Bento' grid for the category section.",
-    "Use the mapped image URLs for specific sections."
-  ],
   "universal_guidelines": [
-    "Don't make generic centered layouts.",
-    "Create depth through layout and borders, not shadows.",
-    "Every interaction needs micro-animations.",
-    "Use 2-3x more spacing than feels comfortable.",
-    "Missing categories = placeholder text is FORBIDDEN. Use abstract shapes or solid colors if needed."
+    "Do NOT use gradients or shadows. Use borders and spacing.",
+    "Ensure all text is high contrast (Dark Grey #1F1F1F on White).",
+    "Use 'Outfit' font for all Headings (h1-h6) and 'DM Sans' for body.",
+    "Primary CTA (Call/WhatsApp) must be always visible or easily accessible.",
+    "Mobile First: Elements stack vertically on mobile with large touch targets.",
+    "No generic 'Lorem Ipsum' if possible. Use realistic drug store text.",
+    "Images must have 'alt' text for accessibility.",
+    "All interactive elements must have `data-testid`."
   ]
 }
