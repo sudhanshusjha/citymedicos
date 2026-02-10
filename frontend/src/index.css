@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@400;500;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,38 +6,30 @@
 
 @layer base {
   :root {
+    --primary: #FF4A1C;
+    --primary-hover: #E03A10;
+    --secondary: #1BAA5E;
+    --secondary-hover: #148F4D;
+    --dark: #1F1F1F;
+    --dark-800: #333333;
+    --light-200: #E5E5E5;
+    --light-100: #F5F5F5;
+    --light-50: #FAFAFA;
+    --white: #FFFFFF;
+    
     --background: 0 0% 100%;
     --foreground: 0 0% 12%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 12%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 12%;
-    --primary: 13 100% 55%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 150 75% 39%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 97%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 30 100% 97%;
-    --accent-foreground: 0 0% 12%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 210 16% 89%;
-    --input: 210 16% 89%;
+    --border: 0 0% 90%;
     --ring: 13 100% 55%;
-    --radius: 0rem;
-    
-    /* Custom brand colors */
-    --brand-orange: #FF4A1C;
-    --brand-green: #1BAA5E;
-    --brand-dark: #1F1F1F;
-    --brand-light: #F7F7F7;
+    --radius: 0.5rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-[#E5E5E5];
   }
   
   html {
@@ -45,12 +37,12 @@
   }
   
   body {
-    @apply bg-white text-[#1F1F1F];
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     line-height: 1.6;
+    color: #1F1F1F;
+    background: #FFFFFF;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -58,114 +50,134 @@
     font-weight: 700;
     line-height: 1.1;
     color: #1F1F1F;
+    letter-spacing: -0.02em;
   }
 }
 
 @layer components {
-  .btn-primary {
-    @apply inline-flex items-center justify-center gap-2;
-    background-color: #FF4A1C;
-    color: white;
-    padding: 16px 32px;
-    border-radius: 9999px;
-    font-weight: 700;
-    font-size: 18px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+  .container-main {
+    @apply max-w-[1280px] mx-auto px-6 lg:px-8;
   }
   
-  .btn-primary:hover {
-    background-color: #E03A10;
+  .section-gap {
+    @apply py-16 md:py-24;
+  }
+  
+  .btn-call {
+    @apply inline-flex items-center justify-center gap-3 font-bold text-lg px-8 py-4 rounded-full transition-all duration-200;
+    background: #FF4A1C;
+    color: white;
+  }
+  .btn-call:hover {
+    background: #E03A10;
     transform: scale(1.02);
   }
-  
-  .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2;
-    background-color: #1BAA5E;
-    color: white;
-    padding: 16px 32px;
-    border-radius: 9999px;
-    font-weight: 700;
-    font-size: 18px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+  .btn-call:active {
+    transform: scale(0.98);
   }
   
-  .btn-secondary:hover {
-    background-color: #148F4D;
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-3 font-bold text-lg px-8 py-4 rounded-full transition-all duration-200;
+    background: #25D366;
+    color: white;
+  }
+  .btn-whatsapp:hover {
+    background: #1EBE5A;
     transform: scale(1.02);
   }
   
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2;
-    border: 2px solid #1F1F1F;
+    @apply inline-flex items-center justify-center gap-3 font-bold text-lg px-8 py-4 rounded-full transition-all duration-200 bg-transparent border-2;
+    border-color: #1F1F1F;
     color: #1F1F1F;
-    padding: 16px 32px;
-    border-radius: 9999px;
-    font-weight: 600;
-    font-size: 18px;
-    transition: all 0.2s ease;
   }
-  
   .btn-outline:hover {
-    background-color: #1F1F1F;
+    background: #1F1F1F;
     color: white;
   }
   
-  .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
+  .card-base {
+    @apply bg-white border-2 rounded-2xl p-6 transition-colors duration-200;
+    border-color: #E5E5E5;
   }
-  
-  .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
-  
-  .card-custom {
-    @apply bg-white p-6 md:p-8;
-    border: 2px solid #F0F0F0;
-    border-radius: 16px;
-    transition: border-color 0.2s ease;
-  }
-  
-  .card-custom:hover {
+  .card-base:hover {
     border-color: #FF4A1C;
   }
-}
-
-@layer utilities {
-  .text-brand-orange {
+  
+  .badge-delivery {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold;
+    background: #1BAA5E;
+    color: white;
+  }
+  
+  .link-nav {
+    @apply text-lg font-medium transition-colors;
+    color: #1F1F1F;
+  }
+  .link-nav:hover, .link-nav.active {
     color: #FF4A1C;
-  }
-  
-  .text-brand-green {
-    color: #1BAA5E;
-  }
-  
-  .bg-brand-orange {
-    background-color: #FF4A1C;
-  }
-  
-  .bg-brand-green {
-    background-color: #1BAA5E;
-  }
-  
-  .bg-brand-light {
-    background-color: #F7F7F7;
-  }
-  
-  .border-brand-orange {
-    border-color: #FF4A1C;
   }
 }
 
 /* Focus states for accessibility */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #FF4A1C;
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #FF4A1C;
 }
 
-/* Debug wrapper */
-@layer base {
-  [data-debug-wrapper="true"] {
-    display: contents !important;
+/* Subtle pattern background */
+.pattern-crosses {
+  background-image: radial-gradient(#1BAA5E 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.03;
+}
+
+/* Map container */
+.map-frame {
+  @apply border-2 rounded-2xl overflow-hidden;
+  border-color: #E5E5E5;
+}
+
+/* Sticky header */
+.header-sticky {
+  @apply sticky top-0 z-50 bg-white;
+  border-bottom: 2px solid #E5E5E5;
+}
+
+/* Orange CTA block */
+.cta-block {
+  background: #FF4A1C;
+  color: white;
+}
+.cta-block h2, .cta-block p {
+  color: white;
+}
+
+/* Footer dark */
+.footer-dark {
+  background: #1F1F1F;
+  color: #E5E5E5;
+}
+.footer-dark a {
+  color: #E5E5E5;
+  transition: color 0.2s;
+}
+.footer-dark a:hover {
+  color: #FF4A1C;
+}
+
+/* Mobile responsive buttons */
+@media (max-width: 640px) {
+  .btn-call, .btn-whatsapp, .btn-outline {
+    @apply w-full justify-center text-base px-6 py-4;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
 }

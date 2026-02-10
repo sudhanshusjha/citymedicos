@@ -1,72 +1,56 @@
 import { Phone, MessageCircle, Truck, Check, Pill, Leaf, Stethoscope, Sparkles, Baby, UserCheck, MapPin, Clock } from 'lucide-react';
 
-const PHONE_NUMBER = '9873341450';
-const WHATSAPP_LINK = `https://wa.me/91${PHONE_NUMBER}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
-const DELIVERY_WHATSAPP = `https://wa.me/91${PHONE_NUMBER}?text=Hello%20City%20Medicos,%20I%20would%20like%20to%20enquire%20about%20home%20delivery%20of%20medicines.%20Kindly%20let%20me%20know%20the%20process.`;
+const PHONE = '9873341450';
+const WA_LINK = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
+const WA_DELIVERY = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20would%20like%20to%20enquire%20about%20home%20delivery%20of%20medicines.%20Kindly%20let%20me%20know%20the%20process.`;
 
-const categories = [
-  { icon: Pill, label: 'Medicine', description: 'Prescription & OTC medicines' },
-  { icon: Leaf, label: 'Ayurveda', description: 'Natural herbal remedies' },
-  { icon: Stethoscope, label: 'Surgical', description: 'Medical equipment & supplies' },
-  { icon: Sparkles, label: 'Cosmetics', description: 'Skincare & beauty products' },
-  { icon: Baby, label: 'Baby Products', description: 'Baby care essentials' },
-  { icon: UserCheck, label: 'Doctor Support', description: 'Health consultations' },
+const CATEGORIES = [
+  { icon: Pill, name: 'Medicine', desc: 'Prescription & OTC' },
+  { icon: Leaf, name: 'Ayurveda', desc: 'Herbal remedies' },
+  { icon: Stethoscope, name: 'Surgical', desc: 'Medical supplies' },
+  { icon: Sparkles, name: 'Cosmetics', desc: 'Skincare & beauty' },
+  { icon: Baby, name: 'Baby Products', desc: 'Baby essentials' },
+  { icon: UserCheck, name: 'Doctor Support', desc: 'Health guidance' },
 ];
 
-const trustPoints = [
+const TRUST_POINTS = [
   'Genuine medicines from authorized distributors',
-  'Competitive prices with no hidden charges',
+  'Competitive pricing with no hidden charges',
   'FREE home delivery across the locality',
   'Expert pharmacist guidance available',
   'All major brands and generics in stock',
-  'Emergency medicines available round the clock',
+  'Emergency medicines available',
   'Trusted by families for generations',
-  'Prescription verification for your safety',
+  'Prescription verification for safety',
 ];
 
 export const Home = () => {
   return (
-    <main data-testid="home-page">
-      {/* Hero Section */}
-      <section className="hero-bg medical-pattern section-padding" data-testid="hero-section">
-        <div className="container-custom">
-          <div className="max-w-4xl">
-            {/* Free Delivery Badge */}
-            <div className="inline-flex items-center gap-2 bg-brand-green text-white px-4 py-2 rounded-full mb-6">
-              <Truck size={18} />
-              <span className="font-bold text-sm">FREE HOME DELIVERY</span>
+    <main className="page-fade" data-testid="home-page">
+      {/* HERO */}
+      <section className="section-gap bg-[#FAFAFA] relative overflow-hidden" data-testid="hero">
+        <div className="absolute inset-0 pattern-crosses"></div>
+        <div className="container-main relative">
+          <div className="max-w-3xl">
+            <div className="badge-delivery mb-6">
+              <Truck size={18} strokeWidth={2.5} />
+              <span>FREE HOME DELIVERY</span>
             </div>
-
-            {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight mb-6" style={{ fontFamily: 'Outfit, sans-serif' }}>
-              <span className="text-brand-orange">CITY MEDICOS</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6" style={{ fontFamily: 'Outfit' }}>
+              <span className="text-[#FF4A1C]">CITY MEDICOS</span>
               <br />
               <span className="text-[#1F1F1F]">Chemist & Druggist</span>
             </h1>
-
-            {/* Subheading */}
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-              Your trusted neighborhood pharmacy for medicines, Ayurveda, surgical supplies, cosmetics, baby products, and expert health support.
+            <p className="text-xl md:text-2xl text-[#333] mb-8 leading-relaxed max-w-2xl">
+              Your trusted neighborhood pharmacy for medicines, Ayurveda, surgical supplies, cosmetics, baby care & expert health support.
             </p>
-
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href={`tel:${PHONE_NUMBER}`}
-                className="btn-primary text-center"
-                data-testid="hero-call-btn"
-              >
-                <Phone size={22} />
-                <span>Call Now - {PHONE_NUMBER}</span>
+              <a href={`tel:${PHONE}`} className="btn-call text-xl" data-testid="hero-call">
+                <Phone size={24} strokeWidth={2.5} />
+                <span>Call Now – {PHONE}</span>
               </a>
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="whatsapp-btn text-center"
-                data-testid="hero-whatsapp-btn"
-              >
-                <MessageCircle size={22} />
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-whatsapp text-xl" data-testid="hero-whatsapp">
+                <MessageCircle size={24} strokeWidth={2.5} />
                 <span>WhatsApp Us</span>
               </a>
             </div>
@@ -74,49 +58,39 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="section-padding bg-white" data-testid="about-section">
-        <div className="container-custom">
+      {/* ABOUT PREVIEW */}
+      <section className="section-gap bg-white" data-testid="about-preview">
+        <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-brand-orange font-bold text-sm tracking-widest uppercase mb-4 block">
-                About City Medicos
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit, sans-serif' }}>
+              <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">About Us</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
                 Your Neighborhood Pharmacy You Can Trust
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                City Medicos has been serving our community with dedication and care. We believe in providing not just medicines, but complete healthcare solutions with a personal touch that only a neighborhood pharmacy can offer.
+              <p className="text-lg text-[#333] mb-4 leading-relaxed">
+                City Medicos has been serving our community with dedication. We provide not just medicines, but complete healthcare solutions with a personal touch.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                From prescription medicines to Ayurvedic remedies, surgical supplies to daily wellness products - we stock everything your family needs. Our experienced pharmacists are always ready to help with your health queries.
+              <p className="text-lg text-[#333] leading-relaxed">
+                From prescriptions to Ayurvedic remedies, surgical supplies to wellness products – we stock everything your family needs.
               </p>
             </div>
-            <div className="bg-brand-light p-8 md:p-12 rounded-2xl border-2 border-gray-100">
+            <div className="bg-[#F5F5F5] border-2 border-[#E5E5E5] rounded-2xl p-8 md:p-10">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-brand-orange mb-2" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                    6+
-                  </div>
-                  <p className="text-gray-600 font-medium">Product Categories</p>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>6+</div>
+                  <p className="text-[#666] font-medium">Product Categories</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-brand-green mb-2" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                    FREE
-                  </div>
-                  <p className="text-gray-600 font-medium">Home Delivery</p>
+                  <div className="text-4xl md:text-5xl font-black text-[#1BAA5E] mb-2" style={{ fontFamily: 'Outfit' }}>FREE</div>
+                  <p className="text-[#666] font-medium">Home Delivery</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-brand-orange mb-2" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                    14+
-                  </div>
-                  <p className="text-gray-600 font-medium">Hours Daily</p>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF4A1C] mb-2" style={{ fontFamily: 'Outfit' }}>14+</div>
+                  <p className="text-[#666] font-medium">Hours Daily</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-brand-green mb-2" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                    100%
-                  </div>
-                  <p className="text-gray-600 font-medium">Genuine Products</p>
+                  <div className="text-4xl md:text-5xl font-black text-[#1BAA5E] mb-2" style={{ fontFamily: 'Outfit' }}>100%</div>
+                  <p className="text-[#666] font-medium">Genuine Products</p>
                 </div>
               </div>
             </div>
@@ -124,95 +98,65 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Categories Section */}
-      <section className="section-padding bg-brand-light" data-testid="categories-section">
-        <div className="container-custom">
+      {/* CATEGORIES */}
+      <section className="section-gap bg-[#F5F5F5]" data-testid="categories">
+        <div className="container-main">
           <div className="text-center mb-12">
-            <span className="text-brand-orange font-bold text-sm tracking-widest uppercase mb-4 block">
-              What We Offer
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" style={{ fontFamily: 'Outfit, sans-serif' }}>
-              Our Product Categories
-            </h2>
+            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">What We Offer</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" style={{ fontFamily: 'Outfit' }}>Our Product Categories</h2>
           </div>
-
-          <div className="bento-grid">
-            {categories.map((category, index) => {
-              const Icon = category.icon;
-              return (
-                <div
-                  key={index}
-                  className="card-custom text-center"
-                  data-testid={`category-${category.label.toLowerCase().replace(/\s/g, '-')}`}
-                >
-                  <div className="category-icon mx-auto mb-4">
-                    <Icon size={36} className="text-brand-orange" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-2" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                    {category.label}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {category.description}
-                  </p>
+          <div className="bento-categories">
+            {CATEGORIES.map((cat, i) => (
+              <div key={i} className="card-base text-center" data-testid={`category-${cat.name.toLowerCase().replace(/\s/g, '-')}`}>
+                <div className="w-16 h-16 rounded-full border-2 border-[#E5E5E5] bg-white flex items-center justify-center mx-auto mb-4">
+                  <cat.icon size={28} className="text-[#FF4A1C]" strokeWidth={2} />
                 </div>
-              );
-            })}
+                <h3 className="text-lg font-bold mb-1" style={{ fontFamily: 'Outfit' }}>{cat.name}</h3>
+                <p className="text-sm text-[#666]">{cat.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Home Delivery Section */}
-      <section className="section-padding bg-white" data-testid="delivery-section">
-        <div className="container-custom">
+      {/* HOME DELIVERY */}
+      <section className="section-gap bg-white" data-testid="delivery">
+        <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-brand-orange text-white p-8 md:p-12 rounded-2xl">
-                <Truck size={64} className="mb-6" />
-                <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Outfit, sans-serif', color: 'white' }}>
+              <div className="bg-[#FF4A1C] text-white rounded-2xl p-8 md:p-12">
+                <Truck size={56} className="mb-6" strokeWidth={1.5} />
+                <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: 'Outfit', color: 'white' }}>
                   Home Delivery on Call
                 </h3>
                 <p className="text-lg mb-8 opacity-90">
-                  Simply call or WhatsApp us with your prescription or medicine list. We will deliver your medicines right to your doorstep - FREE of cost!
+                  Call or WhatsApp us with your prescription. We deliver medicines to your doorstep – FREE!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a
-                    href={DELIVERY_WHATSAPP}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white text-brand-orange px-8 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 hover:scale-102 transition-transform"
-                    data-testid="delivery-whatsapp-btn"
-                  >
-                    <MessageCircle size={22} />
-                    <span>Home Delivery on Call</span>
+                  <a href={WA_DELIVERY} target="_blank" rel="noopener noreferrer" className="bg-white text-[#FF4A1C] px-6 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 hover:scale-102 transition-transform" data-testid="delivery-wa">
+                    <MessageCircle size={20} strokeWidth={2.5} />
+                    <span>Order via WhatsApp</span>
                   </a>
-                  <a
-                    href={`tel:${PHONE_NUMBER}`}
-                    className="bg-white/20 text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 hover:bg-white/30 transition-colors"
-                    data-testid="delivery-call-btn"
-                  >
-                    <Phone size={22} />
+                  <a href={`tel:${PHONE}`} className="bg-white/20 text-white border-2 border-white px-6 py-4 rounded-full font-bold text-lg inline-flex items-center justify-center gap-2 hover:bg-white/30 transition-colors" data-testid="delivery-call">
+                    <Phone size={20} strokeWidth={2.5} />
                     <span>Call Now</span>
                   </a>
                 </div>
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <span className="text-brand-green font-bold text-sm tracking-widest uppercase mb-4 block">
-                Free Delivery
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                Get Medicines Delivered to Your Doorstep
+              <span className="text-[#1BAA5E] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Free Service</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
+                Get Medicines Delivered to Your Door
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                No need to step out. Just call us at <strong>{PHONE_NUMBER}</strong> or send us a WhatsApp message with your prescription or medicine list.
+              <p className="text-lg text-[#333] mb-6 leading-relaxed">
+                No need to step out. Call <strong>{PHONE}</strong> or WhatsApp your prescription.
               </p>
-              <ul className="space-y-3">
-                {['Call or WhatsApp your order', 'Share prescription if required', 'Confirm order and address', 'Receive medicines at home'].map((step, i) => (
-                  <li key={i} className="flex items-center gap-3 text-lg">
-                    <div className="w-8 h-8 rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-sm">
-                      {i + 1}
-                    </div>
-                    <span>{step}</span>
+              <ul className="space-y-4">
+                {['Call or WhatsApp your order', 'Share prescription if needed', 'Confirm order & address', 'Receive at your doorstep'].map((s, i) => (
+                  <li key={i} className="flex items-center gap-4 text-lg">
+                    <div className="w-8 h-8 rounded-full bg-[#1BAA5E] text-white flex items-center justify-center font-bold text-sm">{i + 1}</div>
+                    <span>{s}</span>
                   </li>
                 ))}
               </ul>
@@ -221,29 +165,25 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="section-padding bg-brand-light" data-testid="trust-section">
-        <div className="container-custom">
+      {/* TRUST */}
+      <section className="section-gap bg-[#FAFAFA]" data-testid="trust">
+        <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="text-brand-green font-bold text-sm tracking-widest uppercase mb-4 block">
-                Why Choose Us
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit, sans-serif' }}>
+              <span className="text-[#1BAA5E] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Why Choose Us</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
                 Why Customers Trust City Medicos
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                We have built our reputation on trust, quality, and service. Here is why thousands of families choose City Medicos for their healthcare needs.
+              <p className="text-lg text-[#333] leading-relaxed">
+                We have built our reputation on trust, quality, and service. Here is why families choose City Medicos.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-2xl border-2 border-gray-100">
-              <ul className="trust-list space-y-2">
-                {trustPoints.map((point, index) => (
-                  <li key={index} className="flex items-start gap-3 text-lg">
-                    <div className="w-6 h-6 rounded-full bg-brand-green flex items-center justify-center flex-shrink-0 mt-1">
-                      <Check size={14} className="text-white" />
-                    </div>
-                    <span>{point}</span>
+            <div className="bg-white border-2 border-[#E5E5E5] rounded-2xl p-6 md:p-8">
+              <ul className="space-y-3">
+                {TRUST_POINTS.map((p, i) => (
+                  <li key={i} className="flex items-start gap-3 text-base md:text-lg">
+                    <div className="trust-check mt-0.5"><Check size={14} className="text-white" strokeWidth={3} /></div>
+                    <span>{p}</span>
                   </li>
                 ))}
               </ul>
@@ -252,78 +192,48 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Store Details & Map Section */}
-      <section className="section-padding bg-white" data-testid="store-section">
-        <div className="container-custom">
+      {/* STORE DETAILS */}
+      <section className="section-gap bg-white" data-testid="store-preview">
+        <div className="container-main">
           <div className="text-center mb-12">
-            <span className="text-brand-orange font-bold text-sm tracking-widest uppercase mb-4 block">
-              Visit Us
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" style={{ fontFamily: 'Outfit, sans-serif' }}>
-              Store Location & Details
-            </h2>
+            <span className="text-[#FF4A1C] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">Visit Us</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold" style={{ fontFamily: 'Outfit' }}>Store Location</h2>
           </div>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Store Info */}
-            <div className="space-y-6">
-              <div className="card-custom">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-brand-orange flex items-center justify-center flex-shrink-0">
-                    <Phone size={24} className="text-white" />
-                  </div>
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <div className="card-base">
+                <div className="info-card">
+                  <div className="info-icon orange"><Phone size={24} className="text-white" /></div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                      Phone / WhatsApp
-                    </h3>
-                    <a href={`tel:${PHONE_NUMBER}`} className="text-2xl font-bold text-brand-orange hover:underline">
-                      {PHONE_NUMBER}
-                    </a>
+                    <h4 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Phone / WhatsApp</h4>
+                    <a href={`tel:${PHONE}`} className="text-2xl font-black text-[#FF4A1C] hover:underline" style={{ fontFamily: 'Outfit' }}>{PHONE}</a>
                   </div>
                 </div>
               </div>
-
-              <div className="card-custom">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-brand-green flex items-center justify-center flex-shrink-0">
-                    <MapPin size={24} className="text-white" />
-                  </div>
+              <div className="card-base">
+                <div className="info-card">
+                  <div className="info-icon green"><MapPin size={24} className="text-white" /></div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                      Store Address
-                    </h3>
-                    <p className="text-lg text-gray-600">
-                      Shop No. 5, Main Market,<br />
-                      New Delhi - 110001
-                    </p>
+                    <h4 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Address</h4>
+                    <p className="text-[#333]">Shop No. 5, Main Market,<br />New Delhi – 110001</p>
                   </div>
                 </div>
               </div>
-
-              <div className="card-custom">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-brand-orange flex items-center justify-center flex-shrink-0">
-                    <Clock size={24} className="text-white" />
-                  </div>
+              <div className="card-base">
+                <div className="info-card">
+                  <div className="info-icon orange"><Clock size={24} className="text-white" /></div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                      Store Timings
-                    </h3>
-                    <p className="text-lg text-gray-600">
-                      Monday - Sunday<br />
-                      8:00 AM - 10:00 PM
-                    </p>
-                    <span className="inline-flex items-center gap-2 mt-2 text-brand-green font-bold">
-                      <span className="w-2 h-2 rounded-full bg-brand-green animate-pulse"></span>
-                      Open Now
-                    </span>
+                    <h4 className="font-bold text-lg mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h4>
+                    <p className="text-[#333]">Monday – Sunday<br />8:00 AM – 10:00 PM</p>
+                    <div className="flex items-center gap-2 mt-2 text-[#1BAA5E] font-bold text-sm">
+                      <div className="open-pulse"></div>
+                      <span>Open Now</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Map */}
-            <div className="map-container h-[400px] lg:h-full min-h-[400px]">
+            <div className="map-frame h-[350px] lg:h-full min-h-[350px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1707500000000!5m2!1sen!2sin"
                 width="100%"
@@ -339,32 +249,22 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="cta-orange section-padding" data-testid="cta-section">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit, sans-serif' }}>
+      {/* CTA */}
+      <section className="cta-block section-gap" data-testid="cta">
+        <div className="container-main text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6" style={{ fontFamily: 'Outfit' }}>
             Need Medicines? We Are Just a Call Away!
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Call us now for medicine enquiries, availability check, or to place a home delivery order. We are here to help!
+            Call us now for enquiries, availability check, or to place a delivery order.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${PHONE_NUMBER}`}
-              className="bg-white text-brand-orange px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform"
-              data-testid="cta-call-btn"
-            >
-              <Phone size={24} />
-              <span>Call Now - {PHONE_NUMBER}</span>
+            <a href={`tel:${PHONE}`} className="bg-white text-[#FF4A1C] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="cta-call">
+              <Phone size={24} strokeWidth={2.5} />
+              <span>Call Now – {PHONE}</span>
             </a>
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#25D366] text-white px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform"
-              data-testid="cta-whatsapp-btn"
-            >
-              <MessageCircle size={24} />
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-102 transition-transform" data-testid="cta-whatsapp">
+              <MessageCircle size={24} strokeWidth={2.5} />
               <span>WhatsApp Us</span>
             </a>
           </div>
