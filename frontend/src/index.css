@@ -6,8 +6,8 @@
 
 @layer base {
   :root {
-    --primary: #FF4A1C;
-    --primary-hover: #E03A10;
+    --primary: #FF6B00;
+    --primary-hover: #E55F00;
     --secondary: #1BAA5E;
     --dark: #1F1F1F;
     --dark-800: #2A2A2A;
@@ -62,11 +62,11 @@
   
   .btn-call {
     @apply inline-flex items-center justify-center gap-3 font-bold text-lg px-8 py-4 rounded-full transition-all duration-200;
-    background: #FF4A1C;
+    background: #FF6B00;
     color: white;
   }
   .btn-call:hover {
-    background: #E03A10;
+    background: #E55F00;
     transform: scale(1.02);
   }
   .btn-call:active {
@@ -99,12 +99,12 @@
     border: 2px solid #333;
   }
   .card-dark:hover {
-    border-color: #FF4A1C;
+    border-color: #FF6B00;
   }
   
   .badge-delivery {
     @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold;
-    background: #FF4A1C;
+    background: #FF6B00;
     color: white;
   }
   
@@ -113,7 +113,7 @@
     color: #FFFFFF;
   }
   .link-nav:hover, .link-nav.active {
-    color: #FF4A1C;
+    color: #FF6B00;
   }
   
   .text-muted {
@@ -137,7 +137,7 @@
 a:focus-visible,
 button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px #1F1F1F, 0 0 0 4px #FF4A1C;
+  box-shadow: 0 0 0 2px #1F1F1F, 0 0 0 4px #FF6B00;
 }
 
 /* Medical cross pattern - green only */
@@ -177,7 +177,7 @@ button:focus-visible {
   transition: color 0.2s;
 }
 .footer-main a:hover {
-  color: #FF4A1C;
+  color: #FF6B00;
 }
 
 /* Trust check - green */
@@ -202,7 +202,7 @@ button:focus-visible {
   justify-content: center;
   flex-shrink: 0;
 }
-.info-icon.orange { background: #FF4A1C; }
+.info-icon.orange { background: #FF6B00; }
 .info-icon.green { background: #1BAA5E; }
 
 /* Open pulse - green */
