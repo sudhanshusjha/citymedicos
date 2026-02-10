@@ -1,0 +1,140 @@
+{
+  "identity": {
+    "persona": "E1 - The Anti-AI Designer",
+    "mission": "Create a high-trust, production-ready website for City Medicos that breaks the 'generic medical' mold while remaining accessible to the elderly.",
+    "principles": [
+      "Fusion over Imitation: Swiss Medical Precision x Neighborhood Warmth",
+      "Emotion First: Trust, Urgency, Care",
+      "Content is King: Phone numbers and 'Call Now' buttons are the heroes",
+      "Zoom In: Big, legible text and clear, high-contrast actions",
+      "Negative Space: generous padding to reduce cognitive load",
+      "Contrast: High contrast (Black/White/Orange) is mandatory for visibility"
+    ]
+  },
+  "theme": {
+    "mode": "light",
+    "style_archetype": "Swiss & High-Contrast",
+    "vibe": "Clinical, Neighborly, Urgent, Trusted",
+    "core_concept": "The Digital Signage - Big, Bold, Direct"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Outfit, sans-serif",
+      "body": "Public Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body_lg": "text-xl md:text-2xl leading-relaxed",
+      "body": "text-lg leading-relaxed",
+      "caption": "text-sm font-medium tracking-wide uppercase"
+    },
+    "rules": [
+      "Headings must never use Inter.",
+      "Body text must be at least 18px (text-lg) for elderly readability.",
+      "Use heavy weights (600/700) for key information like phone numbers.",
+      "Line height should be generous (1.6) for body text."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": "#FF4A1C",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#1BAA5E",
+      "secondary_foreground": "#FFFFFF",
+      "background": "#FFFFFF",
+      "foreground": "#1F1F1F",
+      "muted": "#F7F7F7",
+      "muted_foreground": "#64748B",
+      "border": "#E2E8F0",
+      "accent": "#FFF7ED"
+    },
+    "usage": {
+      "primary": "Main Brand Color - Use for Primary CTAs (Call Now), Borders, Highlights",
+      "secondary": "Trust Indicators - Medical Crosses, Success States, 'Open Now' tags",
+      "background": "Pure White for maximum contrast",
+      "text": "Almost Black (#1F1F1F) for sharp readability against white"
+    },
+    "forbidden": [
+      "Blue (Any shade)",
+      "Gradients",
+      "Drop Shadows (Use borders instead)"
+    ]
+  },
+  "layout": {
+    "grid_system": "Bento Grid Mode A (Tetris Grid)",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_padding": "py-20 md:py-32",
+      "element_gap": "gap-6 md:gap-12"
+    },
+    "border_radius": {
+      "default": "rounded-none",
+      "buttons": "rounded-full"
+    },
+    "strategies": [
+      "Mobile First: Stack everything vertically on mobile.",
+      "The 'Bento' Grid: Use mixed span sizes for categories.",
+      "No Floating Elements: Everything must feel grounded and solid.",
+      "Border Heavy: Use 1px or 2px borders to define areas instead of shadows."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FF4A1C] text-white hover:bg-[#E03A10] rounded-full px-8 py-6 text-xl font-bold transition-transform hover:scale-105",
+      "secondary": "bg-[#1BAA5E] text-white hover:bg-[#148F4D] rounded-full px-8 py-6 text-xl font-bold",
+      "outline": "border-2 border-[#1F1F1F] text-[#1F1F1F] hover:bg-[#1F1F1F] hover:text-white rounded-full px-8 py-6 text-lg font-medium"
+    },
+    "cards": {
+      "style": "bg-white border-2 border-[#F0F0F0] hover:border-[#FF4A1C] transition-colors p-8 rounded-xl",
+      "content_alignment": "left-aligned"
+    },
+    "navigation": {
+      "style": "Sticky header, white background, distinct bottom border. Massive 'Call Now' button in nav."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle noise overlay allowed on colored backgrounds to prevent flatness.",
+    "icons": "Phosphor Icons (Bold or Fill weight) - Medical Cross, Phone, WhatsApp, Pill, Truck",
+    "decorations": "Geometric Medical Crosses patterns in background (opacity 5%)."
+  },
+  "images": {
+    "strategy": "Authentic, Warm, Local. Avoid sterile stock photos where possible.",
+    "mapped_urls": {
+      "hero_bg": "https://images.unsplash.com/photo-1695398170358-99749f64c887",
+      "delivery_scooter": "https://images.unsplash.com/photo-1713111392241-1a9a9861f1ba",
+      "elderly_trust": "https://images.unsplash.com/photo-1738235337917-92d500d6711f",
+      "ayurveda": "https://images.unsplash.com/photo-1734607402896-73dc3ed1f2c9",
+      "pharmacist": "https://images.unsplash.com/flagged/photo-1565293219648-a3d94b5d1def"
+    },
+    "placeholders": "Use colored blocks with bold typography if specific image is missing."
+  },
+  "motion": {
+    "reduced_motion": "Respect prefers-reduced-motion",
+    "hover_effects": "Simple color shifts and scale up (1.02x). No complex 3D flips.",
+    "transitions": "transition-all duration-300 ease-out"
+  },
+  "accessibility": {
+    "contrast": "Strict WCAG AAA compliance for text.",
+    "focus_states": "Visible thick outline (2px) in #1F1F1F or #FF4A1C.",
+    "font_sizing": "Minimum 18px for body text."
+  },
+  "instructions_to_main_agent": [
+    "Do not use gradients or shadows. This is a flat design constraint.",
+    "Use the color #FF4A1C as the primary brand color. Do not use Blue.",
+    "Prioritize the phone number: 9873341450. It should be visible at all times.",
+    "Ensure the layout is mobile-optimized first.",
+    "Use 'Outfit' font for headings and 'Public Sans' for body.",
+    "Implement the 'Bento' grid for the category section.",
+    "Use the mapped image URLs for specific sections."
+  ],
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layout and borders, not shadows.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Missing categories = placeholder text is FORBIDDEN. Use abstract shapes or solid colors if needed."
+  ]
+}
