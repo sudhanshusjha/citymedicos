@@ -226,7 +226,7 @@ export const Home = () => {
                   <div className="info-icon orange"><Clock size={24} className="text-white" /></div>
                   <div>
                     <h4 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h4>
-                    <p className="text-[#CCCCCC]">Monday – Sunday<br />8:00 AM – 11:30 PM</p>
+                    <p className="text-[#CCCCCC]">Monday – Sunday<br />8:00 AM – 1:00 AM</p>
                     <div className="flex items-center gap-2 mt-2 text-[#1BAA5E] font-bold text-sm">
                       <div className="open-pulse"></div>
                       <span>Open Now</span>
