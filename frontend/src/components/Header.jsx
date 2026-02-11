@@ -24,7 +24,7 @@ export const Header = () => {
         <div className="container-main py-2 flex flex-wrap items-center justify-between gap-2 text-sm">
           <div className="flex items-center gap-2">
             <Clock size={16} className="text-[#FF6B00]" />
-            <span className="text-white font-medium">Mon-Sun: 8 AM – 11:30 PM</span>
+            <span className="text-white font-medium">Mon-Sun: 8 AM – 1:00 AM</span>
           </div>
           <div className="flex items-center gap-2">
             <MapPin size={16} className="text-[#FF6B00]" />
