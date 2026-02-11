@@ -74,7 +74,7 @@ export const Footer = () => {
                 <Clock size={18} className="text-[#FF6B00] mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-[#999] text-sm">Hours</p>
-                  <p className="text-white">Mon-Sun: 8 AM – 11:30 PM</p>
+                  <p className="text-white">Mon-Sun: 8 AM – 1:00 AM</p>
                 </div>
               </li>
             </ul>
