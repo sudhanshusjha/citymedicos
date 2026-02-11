@@ -14,7 +14,7 @@ import { Terms } from "./pages/Terms";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/citymedicos">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
