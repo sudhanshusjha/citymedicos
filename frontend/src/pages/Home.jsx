@@ -84,7 +84,7 @@ export const Home = () => {
                   <p className="text-[#999] font-medium">Home Delivery</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="text-4xl md:text-5xl font-black text-[#FF6B00] mb-2" style={{ fontFamily: 'Outfit' }}>15+</div>
+                  <div className="text-4xl md:text-5xl font-black text-[#FF6B00] mb-2" style={{ fontFamily: 'Outfit' }}>17+</div>
                   <p className="text-[#999] font-medium">Hours Daily</p>
                 </div>
                 <div className="text-center p-4">
