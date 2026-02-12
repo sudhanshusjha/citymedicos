@@ -14,6 +14,7 @@ import { Terms } from "./pages/Terms";
 function App() {
   return (
     <div className="App">
+    <h1 style={{color:'red'}}>TEST DEPLOY</h1>
       <BrowserRouter basename="/citymedicos">
         <Header />
         <Routes>
