@@ -4,7 +4,7 @@ const PHONE = '9873341450';
 const WA_LINK = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
 
 const VALUES = [
-  { icon: Heart, title: 'Care & Compassion', desc: 'We treat every customer like family.' },
+  { icon: Heart, title: 'Care & Compassion', desc: 'Test -We treat every customer like family.' },
   { icon: Shield, title: 'Trust & Integrity', desc: 'Only genuine medicines from authorized sources.' },
   { icon: Users, title: 'Community Focus', desc: 'Serving our neighborhood with dedication.' },
   { icon: Award, title: 'Expert Guidance', desc: 'Experienced physician ready to help.' },
