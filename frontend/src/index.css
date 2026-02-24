@@ -225,6 +225,25 @@ button:focus-visible {
   }
 }
 
+/* Form styles */
+.form-label {
+  @apply block text-sm font-bold text-white mb-1.5;
+  font-family: 'Outfit', sans-serif;
+}
+
+.form-input {
+  @apply w-full px-4 py-3 rounded-xl text-white text-base transition-colors duration-200;
+  background: #1F1F1F;
+  border: 2px solid #333;
+  outline: none;
+}
+.form-input::placeholder {
+  color: #666;
+}
+.form-input:focus {
+  border-color: #FF6B00;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {
