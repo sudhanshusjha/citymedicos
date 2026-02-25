@@ -7,6 +7,9 @@ import {
   ChevronRight, Send, Building2, Dumbbell, HeartPulse
 } from 'lucide-react';
 
+import heroImg from '../assets/cityMedicos_Hero.png';
+import ABOUT_IMG from '../assets/city_Medicos_about.png';
+
 const PHONE = '9873341450';
 const WA_LINK = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
 const WA_DELIVERY = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20would%20like%20to%20enquire%20about%20home%20delivery%20of%20medicines.%20Kindly%20let%20me%20know%20the%20process.`;
@@ -16,8 +19,8 @@ const STORE_LNG = 77.4454443;
 const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${STORE_LAT},${STORE_LNG}`;
 const MAP_EMBED_URL = `https://maps.google.com/maps?q=${STORE_LAT},${STORE_LNG}&z=16&output=embed`;
 
-import heroImg from '../assets/cityMedicos_Hero.png';
-import ABOUT_IMG from '../assets/city_Medicos_about.png';
+<img src={heroImg} alt="City Medicos" />;
+<img src={ABOUT_IMG} alt="City Medicos" />;
 
 const PRODUCT_RANGE = [
   { icon: Pill, name: 'Prescription', desc: 'Rx medicines from trusted brands' },
