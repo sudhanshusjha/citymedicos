@@ -106,7 +106,7 @@ export const Services = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-white mb-1">Delivery Time</h4>
-                    <p className="text-[#999]">Same day for orders before 6 PM</p>
+                    <p className="text-[#999]">Same day for orders before 9 PM</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
