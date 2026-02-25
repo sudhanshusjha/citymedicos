@@ -150,14 +150,13 @@ export const Home = () => {
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden border-2 border-[#333]">
-              <img
+             <img
                 src={ABOUT_IMG}
                 alt="City Medicos Store"
-                className="w-full h-auto object-contain rounded-2xl"
-                data-testid="about-image"              
-                />
+                className="w-full h-[350px] lg:h-[450px] object-cover"
+                data-testid="about-image"
+              />
             </div>
-
             <div>
               <span className="text-[#FF6B00] font-bold text-sm tracking-[0.15em] uppercase mb-4 block">About Us</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
