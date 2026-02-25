@@ -160,7 +160,7 @@ button:focus-visible {
 
 /* Orange CTA block */
 .cta-block {
-  background: #FF4A1C;
+  background: [#FF6B00;
   color: white;
 }
 .cta-block h2, .cta-block p {
