@@ -62,7 +62,7 @@ export const Store = () => {
                   <div className="info-icon orange"><Clock size={26} className="text-white" /></div>
                   <div className="flex-1">
                     <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h3>
-                    <p className="text-lg text-[#CCCCCC]">Monday – Sunday<br />8:00 AM – 11:30 PM</p>
+                    <p className="text-lg text-[#CCCCCC]">Monday – Sunday<br />8:00 AM – 1:00 AM</p>
                     <div className="flex items-center gap-2 mt-3 text-[#1BAA5E] font-bold text-sm">
                       <div className="open-pulse" />
                       <span>Open Now – 7 Days a Week</span>
