@@ -110,8 +110,8 @@ export const Store = () => {
       </section>
 
       {/* CTA */}
-      <section className="cta-block section-gap">
-        <div className="container-main text-center">
+      <section className="py-16 bg-black" data-testid="cta">
+       <div className="max-w-4xl mx-auto bg-[#FF6B00] rounded-3xl py-10 px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>Visit Us or Call for Delivery</h2>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Open 7 days a week, 8 AM to 1:00 AM. Drop by or give us a call!
