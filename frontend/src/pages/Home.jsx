@@ -16,8 +16,8 @@ const STORE_LNG = 77.4454443;
 const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${STORE_LAT},${STORE_LNG}`;
 const MAP_EMBED_URL = `https://maps.google.com/maps?q=${STORE_LAT},${STORE_LNG}&z=16&output=embed`;
 
-const HERO_IMG = '../assets/cityMedicos_Hero.png"?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
-const ABOUT_IMG = '../assets/city_Medicos_about.png';
+import heroImg from '../assets/cityMedicos_Hero.png';
+import ABOUT_IMG from '../assets/city_Medicos_about.png';
 
 const PRODUCT_RANGE = [
   { icon: Pill, name: 'Prescription', desc: 'Rx medicines from trusted brands' },
