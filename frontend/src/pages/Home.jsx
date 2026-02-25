@@ -153,7 +153,7 @@ export const Home = () => {
              <img
                 src={ABOUT_IMG}
                 alt="City Medicos Store"
-                className="w-full h-[350px] lg:h-[350px] object-cover"
+                className="w-full h-[350px] lg:h-[450px] object-cover"
                 data-testid="about-image"
               />
             </div>
