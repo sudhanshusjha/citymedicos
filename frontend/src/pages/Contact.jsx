@@ -100,8 +100,8 @@ export const Contact = () => {
       </section>
 
       {/* CTA */}
-      <section className="cta-block section-gap">
-        <div className="container-main text-center">
+      <section className="py-16 bg-black" data-testid="cta">
+        <div className="max-w-4xl mx-auto bg-[#FF6B00] rounded-3xl py-10 px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>We Are Ready to Help!</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Medicine enquiry or home delivery – we are here for you.
