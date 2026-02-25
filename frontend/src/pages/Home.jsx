@@ -39,7 +39,7 @@ const PROMISES = [
   { icon: UserCheck, title: 'Trained Pharmacist', desc: 'Expert guidance for every need' },
   { icon: Package, title: 'Exhaustive Product Range', desc: '12+ categories of healthcare' },
   { icon: Truck, title: 'Free Home Delivery', desc: 'Medicines delivered to your door' },
-  { icon: Clock, title: 'Open 7 Days a Week', desc: '8 AM – 11:30 PM daily' },
+  { icon: Clock, title: 'Open 7 Days a Week', desc: '8 AM – 1:00 AM daily' },
   { icon: Check, title: 'Competitive Pricing', desc: 'Best prices, no hidden charges' },
 ];
 
@@ -47,9 +47,9 @@ const STORES = [
   {
     id: 1,
     name: 'City Medicos - Fusion Market',
-    address: 'Shop No. 5, Fusion Market, Greater Noida West – 201306',
+    address: 'FB-012A, Fusion Homes, Fusion Market, Greater Noida West – 201306',
     phone: '9873341450',
-    timing: '8 AM – 11:30 PM',
+    timing: '8 AM – 1:00 AM',
     lat: STORE_LAT,
     lng: STORE_LNG,
     active: true,
