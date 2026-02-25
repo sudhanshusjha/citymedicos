@@ -47,7 +47,7 @@ const STORES = [
   {
     id: 1,
     name: 'City Medicos - Fusion Market',
-    address: 'FB-012A, Fusion Homes, Fusion Market, Greater Noida West – 201306',
+    address: 'FB-012A, Fusion Market, Fusion Homes, Greater Noida West – 201306',
     phone: '9873341450',
     timing: '8 AM – 1:00 AM',
     lat: STORE_LAT,
