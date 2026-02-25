@@ -75,7 +75,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Address</h3>
-                    <p className="text-[#999]">Shop No. 5, Fusion Market,<br />Greater Noida West – 201306</p>
+                    <p className="text-[#999]">FB-012A, Fusion Market, Fusion Homes, <br />Greater Noida West – 201306</p>
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Timings</h3>
-                    <p className="text-[#999]">Monday – Sunday<br />8:00 AM – 11:30 PM</p>
+                    <p className="text-[#999]">Monday – Sunday<br />8:00 AM – 1:00 AM</p>
                     <div className="flex items-center gap-2 mt-2 text-[#1BAA5E] font-bold text-sm">
                       <div className="open-pulse"></div>
                       <span>Open Now</span>
