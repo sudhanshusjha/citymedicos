@@ -66,7 +66,7 @@ export const Footer = () => {
                 <MapPin size={14} className="text-[#FF6B00] mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-[#999] text-xs">Address</p>
-                  <p className="text-white">Shop No. 5, Fusion Market, Greater Noida West – 201306</p>
+                  <p className="text-white">FB-012A, Fusion Market, Fusion Homes, Greater Noida West – 201306</p>
                 </div>
               </li>
               <li className="flex items-start gap-2">
