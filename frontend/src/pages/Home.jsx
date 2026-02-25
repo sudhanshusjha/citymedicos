@@ -149,12 +149,11 @@ export const Home = () => {
      <section className="section-gap bg-[#181818]" data-testid="about-section">
         <div className="container-main">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="rounded-2xl overflow-hidden border-2 border-[#333]">
+            <div className="rounded-2xl shadow-xl">
               <img
                 src={ABOUT_IMG}
                 alt="City Medicos Store"
-                className="w-full h-[350px] lg:h-[450px] object-cover"
-                data-testid="about-image"
+                className="w-full h-auto rounded-2xl"
               />
             </div>
             <div>
