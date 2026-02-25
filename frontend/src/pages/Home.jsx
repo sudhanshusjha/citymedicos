@@ -131,7 +131,7 @@ export const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="w-full">
               <div className="rounded-2xl overflow-hidden border-2 border-[#333]">
                 <img
                   src={HERO_IMG}
