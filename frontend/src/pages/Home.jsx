@@ -564,8 +564,8 @@ export const Home = () => {
       </section>
 
       {/* ── CTA ── */}
-      <section className="cta-block section-gap" data-testid="cta">
-        <div className="container-main text-center">
+      <section className="py-16 bg-black" data-testid="cta">
+          <div className="max-w-4xl mx-auto bg-[#FF6B00] rounded-3xl py-10 px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
             Need Medicines? We Are Just a Call Away!
           </h2>
