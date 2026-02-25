@@ -7,7 +7,7 @@ import {
   ChevronRight, Send, Building2, Dumbbell, HeartPulse
 } from 'lucide-react';
 
-import heroImg from '../assets/cityMedicos_Hero.png';
+import HERO_IMG from '../assets/cityMedicos_Hero.png';
 import ABOUT_IMG from '../assets/city_Medicos_about.png';
 
 const PHONE = '9873341450';
@@ -18,9 +18,6 @@ const STORE_LAT = 28.599230025986312;
 const STORE_LNG = 77.4454443;
 const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${STORE_LAT},${STORE_LNG}`;
 const MAP_EMBED_URL = `https://maps.google.com/maps?q=${STORE_LAT},${STORE_LNG}&z=16&output=embed`;
-
-<img src={heroImg} alt="City Medicos" />;
-<img src={ABOUT_IMG} alt="City Medicos" />;
 
 const PRODUCT_RANGE = [
   { icon: Pill, name: 'Prescription', desc: 'Rx medicines from trusted brands' },
