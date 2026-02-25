@@ -48,7 +48,7 @@ export const Store = () => {
                   <div className="info-icon orange"><MapPin size={26} className="text-white" /></div>
                   <div className="flex-1">
                     <h3 className="font-bold text-lg text-white mb-1" style={{ fontFamily: 'Outfit' }}>Store Address</h3>
-                    <p className="text-lg text-[#CCCCCC]">Shop No. 5, Fusion Market,<br />Greater Noida West – 201306</p>
+                    <p className="text-lg text-[#CCCCCC]">FB-012A, Fusion Market, Fusion Homes, <br />Greater Noida West – 201306</p>
                     <a href={DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#FF6B00] font-bold mt-3 hover:underline text-sm" data-testid="store-directions">
                       <Navigation size={16} />
                       Get Directions
@@ -114,7 +114,7 @@ export const Store = () => {
         <div className="container-main text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>Visit Us or Call for Delivery</h2>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Open 7 days a week, 8 AM to 11:30 PM. Drop by or give us a call!
+            Open 7 days a week, 8 AM to 1:00 AM. Drop by or give us a call!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={`tel:${PHONE}`} className="bg-white text-[#FF6B00] px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform" data-testid="store-cta-call">
