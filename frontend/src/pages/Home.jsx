@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 
 import HERO_IMG from '../assets/cityMedicos_Hero.png';
-import ABOUT_IMG from '../assets/CityMedicos_Front_edit.jpeg';
+import ABOUT_IMG from '../assets/CityMedicos_Front_edit1.png';
 
 const PHONE = '9873341450';
 const WA_LINK = `https://wa.me/91${PHONE}?text=Hello%20City%20Medicos,%20I%20need%20help%20with%20medicine%20availability%20and%20home%20delivery.%20Please%20guide%20me.`;
