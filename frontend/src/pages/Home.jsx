@@ -154,7 +154,8 @@ export const Home = () => {
                 src={ABOUT_IMG}
                 alt="City Medicos Store"
                 className="w-full h-auto object-contain rounded-2xl"
-                data-testid="about-image"              />
+                data-testid="about-image"              
+                />
             </div>
 
             <div>
