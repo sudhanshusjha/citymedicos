@@ -120,6 +120,17 @@ export const Home = () => {
               <p className="text-lg md:text-xl text-[#CCCCCC] mb-8 leading-relaxed max-w-xl">
                 Your trusted neighborhood pharmacy for medicines, Ayurveda, surgical supplies, cosmetics, baby care & expert health support.
               </p>
+              <a href="https://g.page/r/CITY-MEDICOS/review" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 mb-8 hover:opacity-90">
+              <div className="flex text-yellow-400 text-xl">
+                ★★★★★
+              </div>
+                <span className="text-white font-semibold">
+                4.7 Google Rating
+                </span>
+                <span className="text-white/80">
+                • See our reviews
+                </span>
+                </a>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href={`tel:${PHONE}`} className="btn-call text-lg" data-testid="hero-call">
                   <Phone size={22} strokeWidth={2.5} />
@@ -148,6 +159,46 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="py-14 bg-gray-50">
+  <div className="max-w-4xl mx-auto text-center px-6">
+
+    <h2 className="text-3xl font-bold mb-4">
+      Check Medicine Availability
+    </h2>
+
+    <p className="text-gray-600 mb-8">
+      Search your medicine and send enquiry instantly on WhatsApp
+    </p>
+
+    <div className="flex flex-col md:flex-row gap-4 justify-center">
+
+      <input
+        type="text"
+        placeholder="Enter medicine name..."
+        className="border rounded-lg px-5 py-4 w-full md:w-96"
+        id="medicineInput"
+      />
+
+      <button
+        onClick={() => {
+          const medicine =
+            document.getElementById("medicineInput").value;
+
+          window.open(
+            `https://wa.me/${PHONE}?text=Hello%20City%20Medicos,%20I%20want%20to%20check%20availability%20of%20${medicine}`,
+            "_blank"
+          );
+        }}
+        className="bg-[#25D366] text-white px-6 py-4 rounded-lg font-semibold"
+      >
+        Check on WhatsApp
+      </button>
+
+    </div>
+
+  </div>
+</section>
 
       {/* ── ABOUT US  ── */}
      <section className="section-gap bg-[#181818]" data-testid="about-section">
@@ -570,6 +621,7 @@ export const Home = () => {
 
       {/* ── CTA ── */}
       <section className="py-16 bg-black" data-testid="cta">
+        <section className="section-gap py-16" style={{background: "linear-gradient(135deg,#FF6B00 0%,#ff8c3a 100%)"}} data-testid="cta">
           <div className="max-w-4xl mx-auto bg-[#FF6B00] rounded-3xl py-10 px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
             Need Medicines? We Are Just a Call Away!
