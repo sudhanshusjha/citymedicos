@@ -621,8 +621,8 @@ export const Home = () => {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-16 bg-black" data-testid="cta">
-        <section className="section-gap py-16" style={{background: "linear-gradient(135deg,#FF6B00 0%,#ff8c3a 100%)"}} data-testid="cta">
+
+      <section className="section-gap py-16" style={{ background: "linear-gradient(135deg,#FF6B00 0%,#ff8c3a 100%)" }} data-testid="cta">
           <div className="max-w-4xl mx-auto bg-[#FF6B00] rounded-3xl py-10 px-8 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: 'Outfit' }}>
             Need Medicines? We Are Just a Call Away!
