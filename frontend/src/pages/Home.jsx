@@ -129,12 +129,8 @@ export const Home = () => {
                   <MessageCircle size={22} strokeWidth={2.5} />
                   <span>WhatsApp Us</span>
                 </a>
-                <a
-                  href={`https://wa.me/${PHONE}?text=Hello%20City%20Medicos,%20I%20want%20to%20order%20medicines.%20Sending%20prescription.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-[#FF6B00] text-white px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform>
-                  📷 Upload Prescription
+                <a href={`https://wa.me/${PHONE}?text=Hello%20City%20Medicos,%20I%20want%20to%20order%20medicines.%20Sending%20prescription.`} target="_blank" rel="noopener noreferrer" className="bg-[#FF6B00] text-white px-10 py-5 rounded-full font-bold text-xl inline-flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform">
+                📷 Upload Prescription
                 </a>
               </div>
             </div>
