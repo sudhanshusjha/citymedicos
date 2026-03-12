@@ -136,6 +136,7 @@ export const Home = () => {
                 <img
                   src={HERO_IMG}
                   alt="City Medicos Pharmacy"
+                  loading="lazy"
                   className="w-full h-[420px] object-cover"
                   data-testid="hero-image"
                 />
@@ -153,6 +154,7 @@ export const Home = () => {
               <img
                 src={ABOUT_IMG}
                 alt="City Medicos Store"
+                loading="lazy"
                 className="w-full h-auto rounded-2xl"
               />
             </div>
