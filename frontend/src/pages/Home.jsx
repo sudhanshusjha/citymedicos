@@ -139,9 +139,8 @@ export const Home = () => {
                 <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn-whatsapp text-lg" data-testid="hero-whatsapp">
                   <MessageCircle size={22} strokeWidth={2.5} />
                   <span>WhatsApp Us</span>
-                <a href={`https://wa.me/${PHONE}?text=Hello%20City%20Medicos,%20I%20want%20to%20order%20medicines.%20Sending%20prescription.`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <a href={`https://wa.me/${PHONE}?text=Hello%20City%20Medicos,%20I%20want%20to%20order%20medicines.%20Sending%20prescription.`} target="_blank"
+                  rel="noopener noreferrer"
                     className="btn-whatsapp text-lg">
                     📷 Upload Prescription
                 </a>
