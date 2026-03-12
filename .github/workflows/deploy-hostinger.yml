@@ -36,3 +36,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: frontend/build/
           server-dir: domains/citymedicos.in/public_html/
+          dangerous-clean-slate: true
