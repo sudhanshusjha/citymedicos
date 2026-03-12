@@ -7,7 +7,7 @@ import {
   ChevronRight, Send, Building2, Dumbbell, HeartPulse
 } from 'lucide-react';
 
-import HERO_IMG from '../assets/cityMedicos_Hero.png';
+import HERO_IMG from '../assets/CityMedicos_heroImage.png';
 import ABOUT_IMG from '../assets/CityMedicos_Front_edit1.png';
 
 const PHONE = '9873341450';
