@@ -135,7 +135,7 @@ export const Home = () => {
               <div className="rounded-2xl overflow-hidden border-2 border-[#333]">
                 <img
                   src={HERO_IMG}
-                  alt="City Medicos Pharmacy"
+                  alt="City Medicos Pharmacy - Meidicine Store"
                   loading="lazy"
                   className="w-full h-[420px] object-cover"
                   data-testid="hero-image"
@@ -153,7 +153,7 @@ export const Home = () => {
             <div className="rounded-2xl shadow-xl">
               <img
                 src={ABOUT_IMG}
-                alt="City Medicos Store"
+                alt="City Medicos Chemist and Drug Store Greater Noida West"
                 loading="lazy"
                 className="w-full h-auto rounded-2xl"
               />
